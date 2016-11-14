@@ -2,7 +2,7 @@
   "name": "insight-ui-zcash",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the zcash network and build your own services with it.",
   "version": "0.4.0",
-  "repository": "git://github.com/zcashblockchain/insight-ui-zcash.git",
+  "repository": "git+ssh://github.com/zcashblockchain/insight-ui-zcash.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
