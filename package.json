@@ -1,8 +1,8 @@
 {
-  "name": "insight-ui-zcash",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the zcash network and build your own services with it.",
+  "name": "insight-ui-komodo",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the komodo network and build your own services with it.",
   "version": "0.4.0",
-  "repository": "git+ssh://github.com/zcashblockchain/insight-ui-zcash.git",
+  "repository": "git+ssh://git@github.com:supernetorg/insight-ui-komodo.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -30,19 +30,19 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/zcashblockchain/insight-ui-zcash/issues"
+    "url": "https://github.com/supernetorg/insight-ui-komodo/issues"
   },
-  "homepage": "https://github.com/zcashblockchain/insight-ui-zcash",
+  "homepage": "https://github.com/supernetorg/insight-ui-komodo",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
-    "zcash",
+    "komodo",
     "bitcore",
     "front-end"
   ],
-  "bitcoreNode": "bitcore-node-zcash",
+  "bitcoreNode": "bitcore-node-komodo",
   "dependencies": {
   },
   "devDependencies": {
