@@ -866,6 +866,13 @@ a.v_highlight_more {
 }
 
 #brandImgLg {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+}
+
+#intro {
+  font-size:20px;
+}
+
+#subIntro {
+  font-size: 16px
 }
