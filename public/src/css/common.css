@@ -190,7 +190,7 @@ margin-left: 0;
   padding-bottom: 22px;
 }
 
-#search-form { color: #fff; }
+#search-form { color: #525252; }
 
 #search.loading {
   background-image: url('../img/loading.gif');
