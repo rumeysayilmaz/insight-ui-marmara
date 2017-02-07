@@ -619,13 +619,12 @@ margin-left: 0;
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-block;
-  float: left;
   height: 45px;
 }
-#powered a.bitcore {
-  background-image: url('../img/logo.svg');
+#powered a.supernet {
+  background-image: url('../img/supernet.png');
   background-size: 80px;
-  width: 30%;
+  width: 100%;
 }
 #powered a.nodejs {
   background-image: url('../img/nodejs.png');
