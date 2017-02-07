@@ -865,3 +865,7 @@ a.v_highlight_more {
   height: 45px;
 }
 
+#brandImgLg {
+  width: 80%;
+  margin: 0 auto;
+}
