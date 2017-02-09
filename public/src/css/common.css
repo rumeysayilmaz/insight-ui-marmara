@@ -115,25 +115,26 @@ margin-left: 0;
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #373D42;}
 
 .navbar-default {
-  background-color: #8DC429;
+  background-color: #ccded5;
   margin: 0;
   border: 0;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #F4FBE8;
+  color: #346464;
   font-family: 'Ubuntu', sans-serif;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
-  background-color: #6C9032;
-  color: #fff;
+  background-color: #ccded5;
+  color: #346464;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
   background-color: #fff;
+  color: #797979;
 }
 
 .navbar-form .form-group {
@@ -162,11 +163,19 @@ margin-left: 0;
 
 .navbar-default .navbar-brand {
   color: #FFFFFF;
-  padding: 20px 15px;
+  padding: 9px 5px 0 5px;
+}
+
+  .navbar-brand {
+    float: left;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 55px;
 }
 
 .navbar-form .form-control {
-  background-color: #7CAD23;
+  background-color: #bdc7c2;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -181,7 +190,7 @@ margin-left: 0;
   padding-bottom: 22px;
 }
 
-#search-form { color: #fff; }
+#search-form { color: #525252; }
 
 #search.loading {
   background-image: url('../img/loading.gif');
@@ -201,14 +210,14 @@ margin-left: 0;
 #search { color: #fff; }
 
 #search::-webkit-input-placeholder {
-  color: #BCDF7E;
+  color: #a7a7a7;
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 100;
 }
 
 #search::-moz-placeholder {
-  color: #BCDF7E;
+  color: #a7a7a7;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 100;
 }
@@ -216,7 +225,7 @@ margin-left: 0;
 .status {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #597338;
+  background-color: #346464;
   border-radius: 3px;
   margin: 15px 0;
   padding: 8px 10px;
@@ -610,13 +619,12 @@ margin-left: 0;
   background-repeat: no-repeat;
   background-position: center center;
   display: inline-block;
-  float: left;
-  height: 45px;
+  height: 80px;
 }
-#powered a.bitcore {
-  background-image: url('../img/logo.svg');
+#powered a.supernet {
+  background-image: url('../img/supernet.png');
   background-size: 80px;
-  width: 30%;
+  width: 100%;
 }
 #powered a.nodejs {
   background-image: url('../img/nodejs.png');
@@ -785,8 +793,9 @@ a.v_highlight_more {
     font-size: 20px;
   }
   .navbar-default .navbar-brand {
-    padding: 15px;
+    padding: 5px;
   }
+
   .insight {
     font-size: 26px;
   }
@@ -850,3 +859,20 @@ a.v_highlight_more {
   }
 }
 
+/* Komodo Explorer Misc CSS
+-------------------------------------------------- */
+#brandImg {
+  height: 45px;
+}
+
+#brandImgLg {
+  width: 100%;
+}
+
+#intro {
+  font-size:20px;
+}
+
+.subIntro {
+  font-size: 16px
+}
