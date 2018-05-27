@@ -2,7 +2,7 @@
   "name": "insight-ui-komodo",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the komodo network and build your own services with it.",
   "version": "0.4.0",
-  "repository": "git+ssh://git@github.com:supernetorg/insight-ui-komodo.git",
+  "repository": "git+https://git@github.com/DeckerSU/insight-ui-komodo.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
