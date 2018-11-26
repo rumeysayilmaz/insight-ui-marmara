@@ -15,11 +15,14 @@ angular.module('insight.system').controller('FooterController',
     $scope.version = _getVersion();
 
     $scope.availableLanguages = [{
+      name: 'English',
+      isoCode: 'en',
+    }, {
       name: 'Deutsch',
       isoCode: 'de_DE',
     }, {
-      name: 'English',
-      isoCode: 'en',
+      name: 'Русский',
+      isoCode: 'ru',
     }, {
       name: 'Spanish',
       isoCode: 'es',

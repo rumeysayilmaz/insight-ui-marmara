@@ -1,0 +1,556 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: Insight\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: Decker <support@decker.su>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
+
+#: public/views/transaction/tx.html:276
+msgid "(Input unconfirmed)"
+msgstr "(неподтвержденный вход)"
+
+#: public/views/404.html:4
+msgid "404 Page not found :("
+msgstr "404 Страница не найдена :("
+
+#: public/views/index.html:71
+msgid ""
+"<a href=\"https://komodoplatform.com\" target=\"_blank\" title=\"Komodo "
+"Platform\">Komodo Platform</a> strives to accelerate the adoption of "
+"blockchain technologies around the globe and to lead the world in blockchain "
+"integration. All of the Komodo’s unique and cutting-edge technologies are "
+"open-source and available to everyone."
+msgstr ""
+"<a href=\"https://komodoplatform.com\" target=\"_blank\" title=\"Komodo "
+"Platform\">Komodo Platform</a> strives to accelerate the adoption of "
+"blockchain technologies around the globe and to lead the world in blockchain "
+"integration. All of the Komodo’s unique and cutting-edge technologies are "
+"open-source and available to everyone."
+
+#: public/views/address.html:20 public/views/address.html:26
+#: public/views/address.html:6 public/views/messages_verify.html:11
+msgid "Address"
+msgstr "Адрес"
+
+#: public/views/index.html:17
+msgid "Age"
+msgstr "Время"
+
+#: public/views/messages_verify.html:62
+msgid "An error occured in the verification process."
+msgstr "Произошла ошибка в процессе проверки."
+
+#: public/views/transaction_sendraw.html:42
+msgid "An error occured:<br>{{error}}"
+msgstr "Произошла ошибка:<br>{{error}}"
+
+#: public/views/status.html:4
+msgid "Application Status"
+msgstr "Статус приложения"
+
+#: public/views/block.html:12
+msgid "Block"
+msgstr "Блок"
+
+#: public/views/block.html:61
+msgid "Block Reward"
+msgstr "Награда за блок"
+
+#: public/views/block_list.html:33 public/views/block_list.html:8
+#: public/views/dummy-translations.html:1 public/views/status.html:92
+msgid "Blocks"
+msgstr "Блоки"
+
+#: public/views/transaction_sendraw.html:4
+msgid "Broadcast Raw Transaction"
+msgstr "Отправить raw-транзакцию в сеть"
+
+#: public/views/includes/connection.html:13
+msgid "Can't connect to insight server. Attempting to reconnect..."
+msgstr "Ошибка подклоючения к серверу insight. Повторная попытка..."
+
+#: public/views/includes/connection.html:17
+msgid "Can't connect to internet. Please, check your connection."
+msgstr "Ошибка подключения к интернет. Пожалуйста, проверьте соединение."
+
+#: public/views/includes/connection.html:9
+msgid ""
+"Can't connect to komodod to get live updates from the p2p network. (Tried "
+"connecting to komodod at {{host}}:{{port}} and failed.)"
+msgstr ""
+"Ошибка подключения к komodod для получения обновлений из сети. (Попытка "
+"подключения к {{host}}:{{port}} не удалась.)"
+
+#: public/views/charts.html:8
+msgid "Charts"
+msgstr "Графики"
+
+#: public/views/status.html:18
+msgid "Complete"
+msgstr "Завершено"
+
+#: public/views/transaction.html:15 public/views/transaction/tx.html:410
+msgid "Confirmations"
+msgstr "Подтверждений"
+
+#: public/views/includes/header.html:35
+msgid "Conn"
+msgstr "Узлы"
+
+#: public/views/status.html:100
+msgid "Connections to other nodes"
+msgstr "Соединений с другими узлами"
+
+#: public/views/status.html:70
+msgid "Current Blockchain Tip (insight)"
+msgstr "Текущая вершина блокчейна (insight)"
+
+#: public/views/status.html:25
+msgid "Current Sync Status"
+msgstr "Текущий статус синхронизации"
+
+#: public/views/transaction.html:93
+msgid "Details"
+msgstr "Подробная информация"
+
+#: public/views/block.html:94
+msgid "Difficulty"
+msgstr "Сложность"
+
+#: public/views/transaction/tx.html:248 public/views/transaction/tx.html:284
+msgid "Double spent attempt detected. From tx:"
+msgstr "Попытка двойной траты. Транзакция:"
+
+#: public/views/index.html:69
+msgid ""
+"End-to-end Blockchain Solutions Provider empowering developers to build "
+"freely\n"
+"and participate in creating the largest open blockchain network."
+msgstr ""
+"End-to-end Blockchain Solutions Provider empowering developers to build "
+"freely\n"
+"and participate in creating the largest open blockchain network."
+
+#: public/views/messages_verify.html:64
+msgid "Error message:"
+msgstr "Описание ошибки:"
+
+#: public/views/includes/connection.html:7
+msgid "Error!"
+msgstr "Ошибка!"
+
+#: public/views/transaction/tx.html:406
+msgid "Fee"
+msgstr "Комиссия"
+
+#: public/views/transaction.html:56
+msgid "Fee Rate"
+msgstr "Размер комисии"
+
+#: public/views/address.html:10 public/views/address.html:44
+msgid "Final Balance"
+msgstr "Итоговый баланс"
+
+#: public/views/status.html:39
+msgid "Finish Date"
+msgstr "Время завершения"
+
+#: public/views/404.html:5
+msgid "Go to home"
+msgstr "Домой"
+
+#: public/views/block.html:54 public/views/block_list.html:40
+#: public/views/includes/header.html:37 public/views/index.html:16
+msgid "Height"
+msgstr "Высота"
+
+#: public/views/transaction.html:70 public/views/transaction/tx.html:399
+msgid "Included in Block"
+msgstr "Входит в блок"
+
+#: public/views/transaction/tx.html:244 public/views/transaction/tx.html:280
+msgid "Incoherence in levelDB detected:"
+msgstr "Нарушение связности в LevelDB:"
+
+#: public/views/status.html:116
+msgid "Info Errors"
+msgstr "Информация об ошибках"
+
+#: public/views/status.html:43
+msgid "Initial Block Chain Height"
+msgstr "Начальная высота блокчейна"
+
+#: public/views/transaction.html:32
+msgid "Input"
+msgstr "Вход"
+
+#: public/views/messages_verify.html:72
+msgid "Komodo comes with a way of signing arbitrary messages."
+msgstr "Komodo comes with a way of signing arbitrary messages."
+
+#: public/views/status.html:79
+msgid "Komodo node information"
+msgstr "Информация об узле"
+
+#: public/views/status.html:61
+msgid "Last Block"
+msgstr "Последний блок"
+
+#: public/views/status.html:66
+msgid "Last Block Hash (Komodod)"
+msgstr "Хеш последнего блока (komodod)"
+
+#: public/views/index.html:12
+msgid "Latest Blocks"
+msgstr "Последние блоки"
+
+#: public/views/index.html:40
+msgid "Latest Transactions"
+msgstr "Последние транзакции"
+
+#: public/views/address.html:22
+msgid "Loading Address Information"
+msgstr ""
+"Загрузка информации\n"
+" об адресе"
+
+#: public/views/block.html:36
+msgid "Loading Block Information"
+msgstr "Загрузка информации о блоке"
+
+#: public/views/block_list.html:17
+msgid "Loading Selected Date..."
+msgstr "Загрузка выбранной даты..."
+
+#: public/views/transaction.html:39
+msgid "Loading Transaction Details"
+msgstr "Загрузка деталей транзакции"
+
+#: public/views/transaction/list.html:9
+msgid "Loading Transactions..."
+msgstr "Загрузка транзакций..."
+
+#: public/views/charts.html:24
+msgid "Loading chart..."
+msgstr "Загрузка графиков..."
+
+#: public/views/includes/infoStatus.html:1 public/views/messages_verify.html:49
+#: public/views/transaction_sendraw.html:36
+msgid "Loading..."
+msgstr "Загрузка..."
+
+#: public/views/messages_verify.html:29
+msgid "Message"
+msgstr "Сообщение"
+
+#: public/views/transaction.html:65
+msgid "Mined Time"
+msgstr "Время получения"
+
+#: public/views/block.html:69 public/views/block_list.html:43
+#: public/views/index.html:19
+msgid "Mined by"
+msgstr "Майнер"
+
+#: public/views/status.html:104
+msgid "Mining Difficulty"
+msgstr "Сложность майнинга"
+
+#: public/views/status.html:108
+msgid "Network"
+msgstr "Сеть"
+
+#: public/views/block.html:128
+msgid "Next Block"
+msgstr "Следующий блок"
+
+#: public/views/transaction/tx.html:216
+msgid "No Inputs"
+msgstr "Нет входов"
+
+#: public/views/transaction/tx.html:223
+msgid "No Inputs (Newly Generated Coins)"
+msgstr "Нет входов (coinbase транзакция)"
+
+#: public/views/transaction/tx.html:81
+msgid "No JoinSplits"
+msgstr "Нет операций (sprout)"
+
+#: public/views/transaction/tx.html:325
+msgid "No Outputs"
+msgstr "Нет выходов"
+
+#: public/views/transaction/tx.html:27
+msgid "No Shielded Spends and Outputs"
+msgstr "Нет операций (sapling)"
+
+#: public/views/block_list.html:66
+msgid "No blocks yet."
+msgstr "Пока нет блоков."
+
+#: public/views/includes/search.html:5
+msgid "No matching records found!"
+msgstr "Не найдено записей!"
+
+#: public/views/address.html:48 public/views/address.html:67
+msgid "No. Transactions"
+msgstr "Всего транзакций"
+
+#: public/views/block.html:50
+msgid "Number Of Transactions"
+msgstr "Количество транзакций"
+
+#: public/views/transaction.html:33
+msgid "Output"
+msgstr "Выход"
+
+#: public/views/index.html:78
+msgid "Powered by"
+msgstr "Powered by"
+
+#: public/views/block.html:84
+msgid "Previous Block"
+msgstr "Предыдущий блок"
+
+#: public/views/status.html:88
+msgid "Protocol version"
+msgstr "Версия протокола"
+
+#: public/views/status.html:112
+msgid "Proxy setting"
+msgstr "Настройки proxy"
+
+#: public/views/transaction/tx.html:148
+msgid "Public input"
+msgstr "Публичный вход"
+
+#: public/views/transaction/tx.html:177
+msgid "Public output"
+msgstr "Публичный выход"
+
+#: public/views/transaction_sendraw.html:12
+msgid "Raw transaction data"
+msgstr "Raw данные транзакции"
+
+#: public/views/transaction_sendraw.html:19
+msgid "Raw transaction data must be a valid hexadecimal string."
+msgstr "Raw данные транзакции должны быть правильной hex строкой."
+
+#: public/views/transaction.html:60
+msgid "Received Time"
+msgstr "Время получения"
+
+#: public/views/redirect.html:1
+msgid "Redirecting..."
+msgstr "Перенаправление ..."
+
+#: public/views/includes/search.html:3
+msgid "Search for block, transaction or address"
+msgstr "Поиск блока, транзакции или адреса"
+
+#: public/views/index.html:37
+msgid "See all blocks"
+msgstr "Просмотр всех блоков"
+
+#: public/views/transaction_sendraw.html:26
+msgid "Send transaction"
+msgstr "Отправить транзакцию"
+
+#: public/views/transaction/tx.html:187 public/views/transaction/tx.html:302
+msgid "Show all"
+msgstr "Показать все"
+
+#: public/views/transaction/tx.html:185 public/views/transaction/tx.html:300
+msgid "Show input"
+msgstr "Показать вход"
+
+#: public/views/transaction/tx.html:132 public/views/transaction/tx.html:191
+#: public/views/transaction/tx.html:255 public/views/transaction/tx.html:306
+#: public/views/transaction/tx.html:351
+msgid "Show less"
+msgstr "Скрыть"
+
+#: public/views/transaction/tx.html:134 public/views/transaction/tx.html:193
+#: public/views/transaction/tx.html:257 public/views/transaction/tx.html:308
+#: public/views/transaction/tx.html:353
+msgid "Show more"
+msgstr "Показать"
+
+#: public/views/messages_verify.html:20
+msgid "Signature"
+msgstr "Подпись"
+
+#: public/views/block_list.html:44 public/views/index.html:20
+#: public/views/transaction.html:52
+msgid "Size"
+msgstr "Размер"
+
+#: public/views/block.html:102
+msgid "Size (bytes)"
+msgstr "Размер (байт)"
+
+#: public/views/status.html:51
+msgid "Skipped Blocks (previously synced)"
+msgstr "Пропущенные блоки (ранее синхронизированные)"
+
+#: public/views/status.html:35
+msgid "Start Date"
+msgstr "Время начала"
+
+#: public/views/dummy-translations.html:2
+msgid "Status"
+msgstr "Статус"
+
+#: public/views/block.html:44 public/views/transaction.html:48
+msgid "Summary"
+msgstr "Итог"
+
+#: public/views/address.html:30
+msgid "Summary <small>confirmed</small>"
+msgstr "Итог <small>подтвержденный</small>"
+
+#: public/views/status.html:13
+msgid "Sync Progress"
+msgstr "Синхронизация"
+
+#: public/views/status.html:9
+msgid "Sync Status"
+msgstr "Статус синхронизации"
+
+#: public/views/status.html:55
+msgid "Sync Type"
+msgstr "Тип синхронизации"
+
+#: public/views/status.html:47
+msgid "Synced Blocks"
+msgstr "Синхронизировано блоков"
+
+#: public/views/messages_verify.html:56
+msgid "The message failed to verify."
+msgstr "Проверка подписи сообщения не пройдена."
+
+#: public/views/messages_verify.html:52
+msgid "The message is verifiably from {{verification.address}}."
+msgstr "Сообщение подписано отправителем {{verification.address}}."
+
+#: public/views/transaction/list.html:1
+msgid "There are no transactions involving this address."
+msgstr "Для этого адреса нет транзакций."
+
+#: public/views/transaction_sendraw.html:49
+msgid ""
+"This form can be used to broadcast a raw transaction in hex format over\n"
+"        the Komodo network."
+msgstr ""
+"Эта форма может быть использована для отправки raw транзакции в hex\n"
+"        формате через сеть."
+
+#: public/views/messages_verify.html:75
+msgid ""
+"This form can be used to verify that a message comes from\n"
+"        a specific Komodo address."
+msgstr ""
+"Эта форма может быть использована для проверки\n"
+"        отправителя (адреса) сообщения."
+
+#: public/views/status.html:96
+msgid "Time Offset"
+msgstr "Смещение времени"
+
+#: public/views/block.html:65 public/views/block_list.html:41
+msgid "Timestamp"
+msgstr "Дата / время"
+
+#: public/views/block_list.html:21
+msgid "Today"
+msgstr "Сегодня"
+
+#: public/views/address.html:36
+msgid "Total Received"
+msgstr "Всего получено"
+
+#: public/views/address.html:40
+msgid "Total Sent"
+msgstr "Всего отправлено"
+
+#: public/views/transaction.html:30 public/views/transaction.html:44
+#: public/views/transaction.html:6
+msgid "Transaction"
+msgstr "Транзакция"
+
+#: public/views/transaction_sendraw.html:39
+msgid "Transaction succesfully broadcast.<br>Transaction id: {{txid}}"
+msgstr "Транзакция успешно отправлена.<br>TXID: {{txid}}"
+
+#: public/views/address.html:76 public/views/block.html:137
+#: public/views/block_list.html:42 public/views/index.html:18
+msgid "Transactions"
+msgstr "Транзакции"
+
+#: public/views/transaction/tx.html:375
+msgid "Type"
+msgstr "Тип"
+
+#: public/views/address.html:59
+msgid "Unconfirmed"
+msgstr "Нет подтверждений"
+
+#: public/views/transaction.html:17 public/views/transaction/tx.html:411
+msgid "Unconfirmed Transaction!"
+msgstr "Неподтвержденная транзакция!"
+
+#: public/views/address.html:63
+msgid "Unconfirmed Txs Balance"
+msgstr "Баланс неподтвержденных транзакций"
+
+#: public/views/index.html:46
+msgid "Value Out"
+msgstr "Сумма"
+
+#: public/views/messages_verify.html:39
+msgid "Verify"
+msgstr "Проверить"
+
+#: public/views/messages_verify.html:4
+msgid "Verify signed message"
+msgstr "Проверить подпись сообщения"
+
+#: public/views/block.html:106 public/views/status.html:84
+msgid "Version"
+msgstr "Версия"
+
+#: public/views/block_list.html:49 public/views/index.html:24
+msgid "Waiting for blocks..."
+msgstr "Ожидание блоков..."
+
+#: public/views/index.html:50
+msgid "Waiting for transactions..."
+msgstr "Ожидание транзакций..."
+
+#: public/views/index.html:63
+msgid "What is Komodo?"
+msgstr "What is Komodo?"
+
+#: public/views/block_list.html:34
+msgid "by date."
+msgstr "по дате."
+
+#: public/views/transaction/tx.html:13
+msgid "first seen at"
+msgstr "первое появление"
+
+#: public/views/transaction/tx.html:17
+msgid "mined"
+msgstr "дата"
+
+#: public/views/block_list.html:9
+msgid "mined on:"
+msgstr "дата:"
