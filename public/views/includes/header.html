@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="insight navbar-brand" href="." title="Komodo Explorer"><img id="brandImg" src="img/logo.png" alt="Komodo"></a>
+      <a class="insight navbar-brand" href="." title="Marmara Explorer"><img id="brandImg" src="img/logo.png" alt="Marmara"></a>
     </div>
     <div class="navbar-collapse collapse" collapse="$root.isCollapsed">
       <ul class="nav navbar-nav">
@@ -32,9 +32,10 @@
         </div>
         &nbsp; &middot;
         <span data-ng-init="getStatus('Info')">
-          <strong>{{'Conn'|translate}}</strong> {{info.connections}}
+<!--          <strong>{{'Conn'|translate}}</strong> {{info.connections}}-->
+          <strong>{{'Height'|translate}}</strong> {{totalBlocks || info.blocks}}
         </span> &middot;
-        <strong>{{'Height'|translate}}</strong> {{totalBlocks || info.blocks}}
+
       </div>
       </li>
       <li>

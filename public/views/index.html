@@ -1,84 +1,143 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .l-box {
+        padding: 12px;
+        text-align: center;
+        display: inline-flex;
+    }
+</style>
+
 <div class="alert alert-danger" data-ng-show="flashMessage">
-  {{$root.flashMessage}}
+    {{$root.flashMessage}}
 </div>
 <div data-ng-include src="'views/includes/connection.html'"></div>
 <section data-ng-controller="IndexController" data-ng-init="index()">
-  <div class="container">
-    <div id="home" class="row">
-      <div class="col-xs-12 col-md-8">
+    <div class="container">
+        <div id="home" class="row">
+            <div class="col-xs-12 col-md-8">
 
-        <div id="search-form-mobile" class="visible-xs" data-ng-include src="'views/includes/search.html'"></div>
+                <div id="search-form-mobile" class="visible-xs" data-ng-include
+                     src="'views/includes/search.html'"></div>
 
-        <h1 translate>Latest Blocks</h1>
-        <table class="table table-hover table-striped" style="table-layout: fixed">
-          <thead>
-            <tr>
-              <th translate>Height</th>
-              <th translate>Age</th>
-              <th class="text-right"><span class="ellipsis" translate>Transactions</span></th>
-              <th class="text-right hidden-xs"><span class="ellipsis" translate>Mined by</span></th>
-              <th class="text-right" translate>Size</th>
-            </tr>
-          </thead>
-          <tbody>
-          <tr data-ng-show="!blocks.length"><td colspan="4" translate>Waiting for blocks...</td></tr>
-          <tr class="fader" data-ng-repeat='b in blocks'>
-            <td>
-              <a href="block/{{b.hash}}">{{b.height}}</a>
-            </td>
-            <td><span class="ellipsis">{{humanSince(b.time)}}</span></td>
-            <td class="text-right">{{b.txlength}}</td>
-            <td class="text-right hidden-xs"><a href="{{b.poolInfo.url}}" title="{{b.poolInfo.poolName}}" target="_blank" data-ng-show="b.poolInfo">{{b.poolInfo.poolName}}</a></td>
-            <td class="text-right">{{b.size}}</td>
-          </tr>
-          </tbody>
-        </table>
-        <div class="btn-more">
-          <a href="blocks" class="btn btn-default" translate>See all blocks</a>
+                <h1 translate>Latest Blocks</h1>
+                <table class="table table-hover table-striped" style="table-layout: fixed">
+                    <thead>
+                    <tr>
+                        <th translate>Height</th>
+                        <th translate>Age</th>
+                        <th class="text-right"><span class="ellipsis" translate>Transactions</span></th>
+                        <th class="text-right hidden-xs"><span class="ellipsis" translate>Mined by</span></th>
+                        <th class="text-right" translate>Size</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr data-ng-show="!blocks.length">
+                        <td colspan="4" translate>Waiting for blocks...</td>
+                    </tr>
+                    <tr class="fader" data-ng-repeat='b in blocks'>
+                        <td>
+                            <a href="block/{{b.hash}}">{{b.height}}</a>
+                        </td>
+                        <td><span class="ellipsis">{{humanSince(b.time)}}</span></td>
+                        <td class="text-right">{{b.txlength}}</td>
+                        <td class="text-right hidden-xs"><a href="{{b.poolInfo.url}}" title="{{b.poolInfo.poolName}}"
+                                                            target="_blank" data-ng-show="b.poolInfo">{{b.poolInfo.poolName}}</a>
+                        </td>
+                        <td class="text-right">{{b.size}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="btn-more">
+                    <a href="blocks" class="btn btn-default" translate>See all blocks</a>
+                </div>
+
+                <h2 translate>Latest Transactions</h2>
+
+                <table class="table table-hover table-striped" style="table-layout: fixed;">
+                    <thead>
+                    <tr>
+                        <th>Hash</th>
+                        <th class="text-right" translate>Value Out</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr data-ng-show="!txs.length">
+                        <td colspan="3" translate>Waiting for transactions...</td>
+                    </tr>
+                    <tr class="fader" data-ng-repeat='tx in txs'>
+                        <td>
+                            <a class="ellipsis" href="tx/{{tx.txid}}">{{tx.txid}}</a>
+                        </td>
+                        <td class="text-right"><span
+                                class="ellipsis">{{$root.currency.getConvertion(tx.valueOut)}}</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-xs-12 col-md-4 col-gray">
+                <h2 translate>What is Marmara Credit Loops?</h2>
+                <!--
+                    <p id="intro" translate><strong>Komodo</strong> aims at being the new standard for cryptocurrency security and anonymity.</p>
+                    <p class="subIntro" translate>Protected by ZCASH zero-knowledge proofs, users can make 100% untraceable transactions - secured by Bitcoin‘s petahash Proof of Work - due to Komodo’s new delayed Proof of Work (dPoW) consensus mechanism.</p>
+                    <p class="subIntro">Learn more on <a href="https://komodoplatform.com" target="_blank" title="Komodo Platform">KomodoPlatform.com</a></p>
+                    -->
+                <p id="intro" translate><a href="http://marmara.io" target="_blank" title="Marmara Credit Loops">Marmara
+                    Credit Loops (MCL)</a> is the first and the only Decentralized Finance (DeFi) system in the World
+                    designed to run in real economy.</p>
+                <p class="subIntro" translate>The system rewards buyers and sellers when shopping with credit loops
+                    instead of cash. It works as an independent smart chain with a 25% mineable and 75% stakeable coin
+                    integrated with two DeFi protocols. The system uses UTXO based Turing Complete Smart Contracting
+                    system powered by Komodo Platform.</p>
+                <p class="subIntro" translate>Marmara Chain is protected against 51% attacks by means of Komodo dPoW
+                    technologies which recycle the hash power of Bitcoin by backing up independent blockhains on the
+                    Bitcoin network. Staking could only be done when users lock their coins in one of the two funds,
+                    namely; "Activated" and "Locked in Credit Loop" (LCL) funds. When coins are locked in LCL funds,
+                    both issuer and holder(s) of credit have the chance for 3x staking. The system has a unique solution
+                    for coins locked in credit loops unlike other staking systems. Locking coins into credit loops for
+                    staking does not make them static. Instead, they can be circulated while they are locked and doing
+                    3x staking. The process of credit endorsement is designed to assure that it is only worth when
+                    shopping.</p>
+
+                <p data-ng-if='currency.testnet'><strong>This explorer is currently showing the live Marmara
+                    network!</strong></p>
+                <!--        <a class="twitter-timeline" href="https://twitter.com/marmarachain">Tweets by Marmara</a></p>-->
+                <br><br><center>
+                </span></p>
+
+                <div class="l-box">
+                    <div class="pure-u-1-6">
+                        <a target="_blank" href="https://twitter.com/marmarachain"><i class="fa fa-twitter-square"
+                                                                                      style="font-size:48px;color:#373d42"></i></a>
+                    </div>
+                    <div class="pure-u-1-6">
+                        <a target="_blank" href="https://t.me/MarmaraCreditLoop"><i class="fa fa-telegram"
+                                                                                    style="font-size:48px;color:#373d42"></i></a>
+                    </div>
+                    <div class="pure-u-1-6">
+                        <a target="_blank" href="https://www.facebook.com/groups/marmarachain"><i
+                                class="fa fa-facebook-square" style="font-size:48px;color:#373d42"></i></a>
+                    </div>
+                    <div class="pure-u-1-6">
+                        <a target="_blank" href="https://github.com/marmarachain/"><i
+                                class="fa fa-github-square" style="font-size:48px;color:#373d42"></i></a>
+                    </div>
+                    <div class="pure-u-1-6">
+                        <a target="_blank"
+                           href="https://www.linkedin.com/company/marmaracreditloops/?viewAsMember=true"><i
+                                class="fa fa-linkedin-square" style="font-size:48px;color:#373d42"></i></a>
+                    </div>
+                </div>
+
+                <div id="powered" class="row">
+                    <div class="powered-text">
+                        <small class="text-muted" translate>Powered by</small>
+                    </div>
+                    <a href="https://komodoplatform.com" target="_blank" class="komodoplatform"
+                       title="Komodo Platform"></a>
+                </div>
+            </div> <!-- END OF COL-3 -->
         </div>
-
-        <h2 translate>Latest Transactions</h2>
-
-        <table class="table table-hover table-striped" style="table-layout: fixed;">
-          <thead>
-            <tr>
-              <th>Hash</th>
-              <th class="text-right" translate>Value Out</th>
-            </tr>
-          </thead>
-          <tbody>
-          <tr data-ng-show="!txs.length"><td colspan="3" translate>Waiting for transactions...</td></tr>
-          <tr class="fader" data-ng-repeat='tx in txs'>
-            <td>
-              <a class="ellipsis" href="tx/{{tx.txid}}">{{tx.txid}}</a>
-            </td>
-            <td class="text-right"><span class="ellipsis">{{$root.currency.getConvertion(tx.valueOut)}}</span></td>
-          </tr>
-          </tbody>
-        </table>
-
-      </div>
-
-      <div class="col-xs-12 col-md-4 col-gray">
-        <h2 translate>What is Marmara Credit Loops?</h2>
-	<!--
-        <p id="intro" translate><strong>Komodo</strong> aims at being the new standard for cryptocurrency security and anonymity.</p>
-        <p class="subIntro" translate>Protected by ZCASH zero-knowledge proofs, users can make 100% untraceable transactions - secured by Bitcoin‘s petahash Proof of Work - due to Komodo’s new delayed Proof of Work (dPoW) consensus mechanism.</p>
-        <p class="subIntro">Learn more on <a href="https://komodoplatform.com" target="_blank" title="Komodo Platform">KomodoPlatform.com</a></p>
-        -->
-        <p id="intro" translate><a href="http://marmara.io" target="_blank" title="Marmara Credit Loops">Marmara Credit Loops (MCL)</a> is the first and the only Decentralized Finance (DeFi) system in the World designed to run in real economy.</p>
-        <p class="subIntro" translate>The system rewards buyers and sellers when shopping with credit loops instead of cash. It works as an independent smart chain with a 25% mineable and 75% stakeable coin integrated with two DeFi protocols. The system uses UTXO based Turing Complete Smart Contracting system powered by Komodo Platform.</p>
-        <p class="subIntro" translate>Marmara Chain is protected against 51% attacks by means of Komodo dPoW technologies which recycle the hash power of Bitcoin by backing up independent blockhains on the Bitcoin network. Staking could only be done when users lock their coins in one of the two funds, namely; "Activated" and "Locked in Credit Loop" (LCL) funds. When coins are locked in LCL funds, both issuer and holder(s) of credit have the chance for 3x staking. The system has a unique solution for coins locked in credit loops unlike other staking systems. Locking coins into credit loops for staking does not make them static. Instead, they can be circulated while they are locked and doing 3x staking. The process of credit endorsement is designed to assure that it is only worth when shopping.</p>
-
-        <p data-ng-if='currency.testnet'><strong>This explorer is currently showing the live Marmara network!</strong></p>
-        <a class="twitter-timeline" href="https://twitter.com/marmarachain">Tweets by Marmara</a></p>
-        <div id="powered" class="row">
-          <div class="powered-text">
-            <small class="text-muted" translate>Powered by</small>
-          </div>
-          <a href="https://komodoplatform.com" target="_blank" class="komodoplatform" title="Komodo Platform"></a>
-        </div>
-      </div> <!-- END OF COL-3 -->
     </div>
-  </div>
 </section>
