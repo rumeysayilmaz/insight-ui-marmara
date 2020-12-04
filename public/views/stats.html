@@ -1,0 +1,68 @@
+<div data-ng-include src="'views/includes/connection.html'"></div>
+<section>
+  <div id="stats" class="row">
+    <div class="col-xs-12 col-md-12" data-ng-controller="StatsController" data-ng-init="getStats()">
+      <h2 translate class="marmara-stats-header">
+        Marmara Stats
+        <span class="t marmara-stats-sync" tooltip="{{sync.lastBlockChecked}} / {{sync.chainTip}} synced." tooltip-placement="bottom" data-ng-show="sync.status==='syncing'">
+          <span  class="glyphicon glyphicon-refresh icon-rotate"></span>
+          {{sync.progress}}%
+        </span>
+      </h2>
+      <span class="text-danger" data-ng-show="stats.error">
+        <span  class="glyphicon glyphicon-warning-sign"></span>
+        {{sync.error}}
+      </span>
+
+      <div class="card-box-container" data-ng-show="!stats.error">
+        <div class="card-box tilebox-one" data-ng-show="stats.TotalActivated > -1">
+          <span class="icon"><img width="48" height="48" src="/img/coins.svg"></span>
+          <h6 class="black-40 ttu tl">Activated</h6>
+          <h3 class="black tl stats-text-figure">{{stats.TotalActivated.toFixed(2)}}</h3>
+          <div class="sub-info pt3 pb4"><span class="badge badge-success mr-1">{{(stats.TotalActivated*100/stats.total).toFixed(2)}}%</span> <span class="text-muted black-40"></span></div>
+        </div>
+        <div class="card-box tilebox-one" data-ng-show="stats.TotalLockedInLoops > -1">
+          <span class="icon"><img width="48" height="48" src="/img/coins.svg"></span>
+          <h6 class="black-40 ttu tl">Locked</h6>
+          <h3 class="black tl stats-text-figure">{{stats.TotalLockedInLoops.toFixed(2)}}</h3>
+          <div class="sub-info pt3 pb4"><span class="badge badge-success mr-1">{{(stats.TotalLockedInLoops*100/stats.total).toFixed(2)}}%</span> <span class="text-muted black-40"></span></div>
+        </div>
+        <div class="card-box tilebox-one" data-ng-show="stats.TotalNormals > -1">
+          <span class="icon"><img width="48" height="48" src="/img/coins.svg"></span>
+          <h6 class="black-40 ttu tl">Normals</h6>
+          <h3 class="black tl stats-text-figure">{{stats.TotalNormals.toFixed(2)}}</h3>
+          <div class="sub-info pt3 pb4"><span class="badge badge-success mr-1">{{(stats.TotalNormals*100/stats.total).toFixed(2)}}%</span> <span class="text-muted black-40"></span></div>
+        </div>
+      </div>
+
+      <section data-ng-controller="StatsController" data-ng-init="getChartData()">
+        <div class="row">
+          <div class="col-xs-12 col-md-11">
+            <div class="page-header">
+              <h3 class="marmara-chart-title">
+                <span>Historical stats</span>
+              </h3>
+              <select class="marmara-chart-range-selector" ng-options="range as range.title for range in ranges" ng-model="selectedItem" ng-change="updateChartRange()"></select>
+            </div>
+            <div data-ng-show="loading">
+              <span translate>Loading chart...</span> <span class="loader-gif"></span>
+            </div>
+            <div data-ng-show="syncing">
+              <span translate>Synchronizing data...</span> <span class="loader-gif"></span>
+            </div>
+            <div data-ng-show="!loading">
+              <div id="chart1" class="marmara-chart-spacing"></div>
+            </div>
+            <div data-ng-show="!loading">
+              <div id="chart2" class="marmara-chart-spacing"></div>
+            </div>
+            <div data-ng-show="!loading">
+              <div id="chart3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div> <!-- END OF COL-8 -->
+  </div>
+</section>

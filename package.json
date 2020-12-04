@@ -45,6 +45,7 @@
   "bitcoreNode": "bitcore-node-komodo",
   "dependencies": {
   },
+  "deprecated": false,"deprecated": false,
   "devDependencies": {
     "bower": "~1.2.8",
     "grunt": "~0.4.2",
@@ -56,6 +57,27 @@
     "grunt-macreload": "*",
     "grunt-css": "~0.5.4",
     "grunt-markdown": "~0.5.0",
-    "grunt-angular-gettext": "^0.2.15"
-  }
+    "grunt-angular-gettext": "^0.2.15",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "homepage": "https://github.com/supernetorg/insight-ui-komodo",
+  "keywords": [
+    "insight",
+    "blockchain",
+    "blockexplorer",
+    "komodo",
+    "bitcore",
+    "front-end"
+  ],
+  "license": "MIT",
+  "name": "insight-ui-komodo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/DeckerSU/insight-ui-komodo.git"
+  },
+  "version": "0.4.0"
 }
+
+
+
