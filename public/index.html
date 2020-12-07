@@ -6,15 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="fragment" content="!">
-	<title data-ng-if="currency.testnet" data-ng-bind="$root.title + $root.titleDetail + ' | Testnet Insight'">Marmara Explorer</title>
-	<title data-ng-if="!currency.testnet" data-ng-bind="$root.title + $root.titleDetail + ' | Insight'">Marmara Explorer</title>
-	<meta name="keywords" content="komodo, transactions, blocks, address, block chain, best block, mining difficulty, hash serialized, defi, credit loops, utxo, utxo based smart contracts, social credit, decentralized finance, marmara, marmara credit loops">
-	<meta data-ng-if="currency.testnet" name="description" content="Marmara Insight. View detailed information on all testnet marmara transactions and block.">
-	<meta data-ng-if="!currency.testnet" name="description" content="Marmara Insight. View detailed information on all marmara transactions and block.">
+	<title data-ng-if="currency.testnet" data-ng-bind="$root.title + $root.titleDetail + ' | Testnet Insight'">Komodo Explorer</title>
+	<title data-ng-if="!currency.testnet" data-ng-bind="$root.title + $root.titleDetail + ' | Insight'">Komodo Explorer</title>
+	<meta name="keywords" content="komodo, transactions, blocks, address, block chain, best block, mining difficulty, hash serialized">
+	<meta data-ng-if="currency.testnet" name="description" content="Komodo Insight. View detailed information on all testnet komodo transactions and block. {{ $root.title + $root.titleDetail }}">
+	<meta data-ng-if="!currency.testnet" name="description" content="Komodo Insight. View detailed information on all komodo transactions and block. {{ $root.title + $root.titleDetail }}">
 	<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic">
 	<link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="css/common.min.css">
+  <link rel="stylesheet" href="css/marmara.css">
 </head>
 <body ng-cloak class="ng-cloak">
   <div>
@@ -69,11 +70,15 @@
       <a class="insight m10v pull-right" target="_blank" href="http://insight.is">insight <small>API v{{version}}</small></a>
     </div>
   </div>
-  <script language="javascript">window.apiPrefix = '/api';</script>
-	<script src="/socket.io/socket.io.js"></script>
+  <script language="javascript">
+    window.apiPrefix = '';
+    window.netSymbol='MCL';
+  </script>
+  <script src="js/zeroclipboard.min.js"></script>
+	<script src="js/socket.io.js"></script>
 	<script src="js/vendors.min.js"></script>
 	<script src="js/angularjs-all.min.js"></script>
-	<script src="js/main.min.js"></script>
+	<script src="js/main.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
