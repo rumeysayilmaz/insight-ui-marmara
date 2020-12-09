@@ -2,7 +2,7 @@
   "name": "insight-ui-marmara",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the komodo network and build your own services with it.",
   "version": "0.4.0",
-  "repository": "git+https://git@github.com/marmarachain/insight-ui-marmara.git",
+  "repository": "git+https://git@github.com/rumeysayilmaz/insight-ui-marmara.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -74,7 +74,7 @@
   "name": "insight-ui-marmara",
   "repository": {
     "type": "git",
-    "url": "git+https://git@github.com/marmarachain/insight-ui-marmara.git"
+    "url": "git+https://git@github.com/rumeysayilmaz/insight-ui-marmara.git"
   },
   "version": "0.4.0"
 }
