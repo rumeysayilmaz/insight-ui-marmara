@@ -2,7 +2,7 @@
   "name": "insight-ui-komodo",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the komodo network and build your own services with it.",
   "version": "0.4.0",
-  "repository": "git+https://git@github.com/DeckerSu/insight-ui-komodo.git",
+  "repository": "git+https://git@github.com/marmarachain/insight-ui-marmara.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -29,6 +29,9 @@
       "email": "jack@z.cash"
     }
   ],
+  "scripts": {
+    "start": "node main.js"
+  },
   "bugs": {
     "url": "https://github.com/supernetorg/insight-ui-komodo/issues"
   },
@@ -61,23 +64,11 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0"
   },
-  "homepage": "https://github.com/supernetorg/insight-ui-komodo",
-  "keywords": [
-    "insight",
-    "blockchain",
-    "blockexplorer",
-    "komodo",
-    "bitcore",
-    "front-end"
-  ],
   "license": "MIT",
   "name": "insight-ui-komodo",
   "repository": {
     "type": "git",
-    "url": "git+https://git@github.com/DeckerSu/insight-ui-komodo.git"
+    "url": "git+https://git@github.com/marmarachain/insight-ui-marmara.git"
   },
   "version": "0.4.0"
 }
-
-
-
