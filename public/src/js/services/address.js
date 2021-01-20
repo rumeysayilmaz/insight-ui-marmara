@@ -9,7 +9,6 @@ angular.module('insight.address').factory('Address',
       method: 'GET',
       interceptor: {
         response: function (res) {
-          console.warn('block res', res);
           return res.data;
         },
         responseError: function (res) {

@@ -10,6 +10,7 @@ angular.module('insight.blocks')
         method: 'GET',
         interceptor: {
           response: function (res) {
+	    console.warn('block res', res);
             return res.data;
           },
           responseError: function (res) {
