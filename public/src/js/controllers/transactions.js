@@ -68,7 +68,7 @@ function($scope, $rootScope, $routeParams, $location, Global, Transaction, Trans
     }
 
     angular.forEach(tmp, function(v) {
-      v.value    = v.value || parseInt(v.valueSat) / COIN;
+      v.value = v.value || parseInt(v.valueSat) / COIN;
       ret.push(v);
     });
     return ret;
@@ -171,7 +171,6 @@ function($scope, $rootScope, $routeParams, $location, Global, Transaction, Trans
   $scope.$on('tx', function(event, txid) {
     _findTx(txid);
   });
-
 });
 
 angular.module('insight.transactions').controller('SendRawTransactionController',

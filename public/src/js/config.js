@@ -3,19 +3,19 @@
 //Setting up route
 angular.module('insight').config(function($routeProvider) {
   $routeProvider.
-    when('/block/:blockHash', {
+    when('/block/:blockHash/', {
       templateUrl: 'views/block.html',
       title: 'Marmara Block '
     }).
-    when('/block-index/:blockHeight', {
+    when('/block-index/:blockHeight/', {
       controller: 'BlocksController',
       templateUrl: 'views/redirect.html'
     }).
-    when('/tx/send', {
+    when('/tx/send/', {
       templateUrl: 'views/transaction_sendraw.html',
       title: 'Broadcast Raw Transaction'
     }).
-    when('/tx/:txId/:v_type?/:v_index?', {
+    when('/tx/:txId/:v_type?/:v_index?/', {
       templateUrl: 'views/transaction.html',
       title: 'Marmara Transaction '
     }).
@@ -23,27 +23,35 @@ angular.module('insight').config(function($routeProvider) {
       templateUrl: 'views/index.html',
       title: 'Home'
     }).
-    when('/blocks', {
+    when('/', {
+      templateUrl: 'views/index.html',
+      title: 'Home'
+    }).
+    when('/blocks/', {
       templateUrl: 'views/block_list.html',
       title: 'Marmara Blocks solved Today'
     }).
-    when('/blocks-date/:blockDate/:startTimestamp?', {
+    when('/blocks-date/:blockDate/:startTimestamp?/', {
       templateUrl: 'views/block_list.html',
       title: 'Marmara Blocks solved '
     }).
-    when('/address/:addrStr', {
+    when('/address/:addrStr/', {
       templateUrl: 'views/address.html',
       title: 'Marmara Address '
     }).
-    when('/charts/:chartType?', {
+    when('/charts/:chartType?/', {
       templateUrl: 'views/charts.html',
       title: 'Charts'
     }).
-    when('/status', {
+    when('/status/', {
       templateUrl: 'views/status.html',
       title: 'Status'
     }).
-    when('/messages/verify', {
+    when('/stats/', {
+      templateUrl: 'views/stats.html',
+      title: 'Stats'
+    }).
+    when('/messages/verify/', {
       templateUrl: 'views/messages_verify.html',
       title: 'Verify Message'
     })
@@ -74,6 +82,7 @@ angular.module('insight')
       $rootScope.title = $route.current.title;
       $rootScope.isCollapsed = true;
       $rootScope.currentAddr = null;
+      $rootScope.coin = window.netSymbol;
 
       $location.hash($routeParams.scrollTo);
       $anchorScroll();
