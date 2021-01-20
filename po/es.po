@@ -1,470 +1,617 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Insight\n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: es\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:276
 msgid "(Input unconfirmed)"
 msgstr "(Entrada sin confirmar)"
 
-#: public/views/404.html
+#: public/views/404.html:4
 msgid "404 Page not found :("
 msgstr "404 Página no encontrada :("
 
-#: public/views/index.html
+#: public/views/index.html:86
 msgid ""
-"<strong>insight</strong>  is an <a href=\"http://live.insight.is/\" target="
-"\"_blank\">open-source Komodo blockchain explorer</a> with complete REST "
-"and websocket APIs that can be used for writing web wallets and other apps  "
-"that need more advanced blockchain queries than provided by komodod RPC.  "
-"Check out the <a href=\"https://github.com/supernetorg/insight-ui-komodo\" target=\"_blank"
-"\">source code</a>."
+"<a href=\"http://marmara.io\" target=\"_blank\" title=\"Marmara Credit Loops"
+"\">Marmara\n"
+"                    Credit Loops (MCL)</a> is the first and the only "
+"Decentralized Finance (DeFi) system in the World\n"
+"                    designed to run in real economy."
 msgstr ""
-"<strong>insight</strong>  es un <a href=\"http://live.insight.is/\" target="
-"\"_blank\">explorador de bloques de Komodo open-source</a> con un completo "
-"conjunto de REST y APIs de websockets que pueden ser usadas para escribir "
-"monederos de Komodos y otras aplicaciones que requieran consultar un "
-"explorador de bloques.  Obtén el código en <a href=\"http://github.com/"
-"bitpay/insight\" target=\"_blank\">el repositorio abierto de Github</a>."
+"<a href=\"http://marmara.io\" target=\"_blank\" title=\"Marmara Credit Loops"
+"\">Marmara\n"
+"                    Credit Loops (MCL)</a>  es el primer y único sistema de "
+"finanzas descentralizadas (DeFi) del\n"
+"                    mundo diseñado para funcionar en la economía real."
 
-#: public/views/index.html
-msgid ""
-"<strong>insight</strong> is still in development, so be sure to report any "
-"bugs and provide feedback for improvement at our <a href=\"https://github."
-"com/bitpay/insight/issues\" target=\"_blank\">github issue tracker</a>."
-msgstr ""
-"<strong>insight</strong> esta en desarrollo aún, por ello agradecemos que "
-"nos reporten errores o sugerencias para mejorar el software. <a href="
-"\"https://github.com/supernetorg/insight-ui-komodo/issues\" target=\"_blank\">Github issue "
-"tracker</a>."
-
-#: public/views/index.html
-msgid "About"
-msgstr "Acerca de"
-
-#: public/views/address.html
+#: public/views/address.html:20 public/views/address.html:26
+#: public/views/address.html:6 public/views/messages_verify.html:11
 msgid "Address"
 msgstr "Dirección"
 
-#: public/views/index.html
+#: public/views/index.html:27
 msgid "Age"
 msgstr "Edad"
 
-#: public/views/status.html
+#: public/views/messages_verify.html:62
+msgid "An error occured in the verification process."
+msgstr "Ocurrió un error en el proceso de verificación."
+
+#: public/views/transaction_sendraw.html:42
+msgid "An error occured:<br>{{error}}"
+msgstr "Ocurrió un error:<br>{{error}}"
+
+#: public/views/status.html:4
 msgid "Application Status"
 msgstr "Estado de la Aplicación"
 
-#: public/views/status.html
-msgid "Best Block"
-msgstr "Mejor Bloque"
-
-#: public/views/status.html
-msgid "Komodo node information"
-msgstr "Información del nodo Komodo"
-
-#: public/views/block.html
+#: public/views/block.html:12
 msgid "Block"
 msgstr "Bloque"
 
-#: public/views/block.html
+#: public/views/block.html:61
 msgid "Block Reward"
 msgstr "Bloque Recompensa"
 
-#: public/views/block_list.html public/views/dummy-translations.html
-#: public/views/status.html
+#: public/views/block_list.html:33 public/views/block_list.html:8
+#: public/views/dummy-translations.html:1 public/views/status.html:92
 msgid "Blocks"
 msgstr "Bloques"
 
-#: public/views/status.html
-msgid "Bytes Serialized"
-msgstr "Bytes Serializados"
+#: public/views/transaction_sendraw.html:4
+msgid "Broadcast Raw Transaction"
+msgstr "Transmitir transacción sin procesar"
 
-#: public/views/includes/connection.html
+#: public/views/includes/connection.html:9
 msgid ""
-"Can't connect to komodod to get live updates from the p2p network. (Tried "
+"Can't connect to Marmara to get live updates from the p2p network. (Tried "
 "connecting to komodod at {{host}}:{{port}} and failed.)"
 msgstr ""
-"No se pudo conectar a komodod para obtener actualizaciones en vivo de la "
-"red p2p. (Se intentó conectar a komodod de {{host}}:{{port}} y falló.)"
+"No se pudo conectar a Marmara para obtener actualizaciones en vivo de la red "
+"p2p. (Se intentó conectar a komodod de {{host}}:{{port}} y falló.)"
 
-#: public/views/includes/connection.html
+#: public/views/includes/connection.html:13
 msgid "Can't connect to insight server. Attempting to reconnect..."
 msgstr "No se pudo conectar al servidor insight. Intentando re-conectar..."
 
-#: public/views/includes/connection.html
+#: public/views/includes/connection.html:17
 msgid "Can't connect to internet. Please, check your connection."
 msgstr "No se pudo conectar a Internet. Por favor, verifique su conexión."
 
-#: public/views/status.html
+#: public/views/charts.html:8
+msgid "Charts"
+msgstr "Gráficos"
+
+#: public/views/status.html:18
 msgid "Complete"
 msgstr "Completado"
 
-#: public/views/transaction.html public/views/transaction/tx.html
+#: public/views/transaction.html:15 public/views/transaction/tx.html:410
 msgid "Confirmations"
 msgstr "Confirmaciones"
 
-#: public/views/includes/header.html
+#: public/views/includes/header.html:35
 msgid "Conn"
 msgstr "Con"
 
-#: public/views/status.html
+#: public/views/status.html:100
 msgid "Connections to other nodes"
 msgstr "Conexiones a otros nodos"
 
-#: public/views/status.html
+#: public/views/status.html:70
 msgid "Current Blockchain Tip (insight)"
 msgstr "Actual Blockchain Tip (insight)"
 
-#: public/views/status.html
+#: public/views/status.html:25
 msgid "Current Sync Status"
 msgstr "Actual Estado de Sincronización"
 
-#: public/views/transaction.html
+#: public/views/transaction.html:93
 msgid "Details"
 msgstr "Detalles"
 
-#: public/views/block.html
+#: public/views/block.html:94
 msgid "Difficulty"
 msgstr "Dificultad"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:248 public/views/transaction/tx.html:284
 msgid "Double spent attempt detected. From tx:"
 msgstr "Intento de doble gasto detectado. De la transacción:"
 
-#: public/views/includes/connection.html
+#: public/views/messages_verify.html:64
+msgid "Error message:"
+msgstr "Mensaje de error:"
+
+#: public/views/includes/connection.html:7
 msgid "Error!"
 msgstr "¡Error!"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:406
 msgid "Fee"
 msgstr "Tasa"
 
-#: public/views/address.html
+#: public/views/transaction.html:56
+msgid "Fee Rate"
+msgstr "Tasa de tarifa"
+
+#: public/views/address.html:10 public/views/address.html:44
 msgid "Final Balance"
 msgstr "Balance Final"
 
-#: public/views/status.html
+#: public/views/status.html:39
 msgid "Finish Date"
 msgstr "Fecha Final"
 
-#: public/views/404.html
+#: public/views/404.html:5
 msgid "Go to home"
 msgstr "Volver al Inicio"
 
-#: public/views/status.html
-msgid "Hash Serialized"
-msgstr "Hash Serializado"
-
-#: public/views/block.html public/views/block_list.html
-#: public/views/index.html public/views/status.html
-#: public/views/includes/header.html
+#: public/views/block.html:54 public/views/block_list.html:40
+#: public/views/includes/header.html:36 public/views/index.html:26
 msgid "Height"
 msgstr "Altura"
 
-#: public/views/transaction.html public/views/transaction/tx.html
+#: public/views/transaction.html:70 public/views/transaction/tx.html:399
 msgid "Included in Block"
 msgstr "Incluido en el Bloque"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:244 public/views/transaction/tx.html:280
 msgid "Incoherence in levelDB detected:"
 msgstr "Detectada una incoherencia en levelDB:"
 
-#: public/views/status.html
+#: public/views/status.html:116
 msgid "Info Errors"
 msgstr "Errores de Información"
 
-#: public/views/status.html
+#: public/views/status.html:43
 msgid "Initial Block Chain Height"
 msgstr "Altura de la Cadena en Bloque Inicial"
 
-#: public/views/transaction.html
+#: public/views/transaction.html:32
 msgid "Input"
 msgstr "Entrada"
 
-#: public/views/status.html
+#: public/views/status.html:61
 msgid "Last Block"
 msgstr "Último Bloque"
 
-#: public/views/status.html
+#: public/views/status.html:66
 msgid "Last Block Hash (Komodod)"
 msgstr "Último Bloque Hash (Komodod)"
 
-#: public/views/index.html
+#: public/views/index.html:22
 msgid "Latest Blocks"
 msgstr "Últimos Bloques"
 
-#: public/views/index.html
+#: public/views/index.html:54
 msgid "Latest Transactions"
 msgstr "Últimas Transacciones"
 
-#: public/views/address.html
+#: public/views/address.html:22
 msgid "Loading Address Information"
 msgstr "Cargando Información de la Dirección"
 
-#: public/views/block.html
+#: public/views/block.html:36
 msgid "Loading Block Information"
 msgstr "Cargando Información del Bloque"
 
-#: public/views/block_list.html
+#: public/views/block_list.html:17
 msgid "Loading Selected Date..."
 msgstr "Cargando Fecha Seleccionada..."
 
-#: public/views/transaction.html
+#: public/views/transaction.html:39
 msgid "Loading Transaction Details"
 msgstr "Cargando Detalles de la Transacción"
 
-#: public/views/transaction/list.html
+#: public/views/transaction/list.html:9
 msgid "Loading Transactions..."
 msgstr "Cargando Transacciones..."
 
-#: public/views/includes/infoStatus.html
+#: public/views/charts.html:24 public/views/stats.html:48
+msgid "Loading chart..."
+msgstr "Cargando gráficos..."
+
+#: public/views/includes/infoStatus.html:1 public/views/messages_verify.html:49
+#: public/views/transaction_sendraw.html:36
 msgid "Loading..."
 msgstr "Cargando..."
 
-#: public/views/transaction.html
+#: public/views/index.html:93
+msgid ""
+"Marmara Chain is protected against 51% attacks by means of Komodo dPoW\n"
+"                    technologies which recycle the hash power of Bitcoin by "
+"backing up independent blockhains on the\n"
+"                    Bitcoin network. Staking could only be done when users "
+"lock their coins in one of the two funds,\n"
+"                    namely; \"Activated\" and \"Locked in Credit Loop"
+"\" (LCL) funds. When coins are locked in LCL funds,\n"
+"                    both issuer and holder(s) of credit have the chance for "
+"3x staking. The system has a unique solution\n"
+"                    for coins locked in credit loops unlike other staking "
+"systems. Locking coins into credit loops for\n"
+"                    staking does not make them static. Instead, they can be "
+"circulated while they are locked and doing\n"
+"                    3x staking. The process of credit endorsement is "
+"designed to assure that it is only worth when\n"
+"                    shopping."
+msgstr ""
+"Marmara Chain is protected against 51% attacks by means of Komodo dPoW\n"
+"                    technologies which recycle the hash power of Bitcoin by "
+"backing up independent blockhains on the\n"
+"                    Bitcoin network. Staking could only be done when users "
+"lock their coins in one of the two funds,\n"
+"                    namely; \"Activated\" and \"Locked in Credit Loop"
+"\" (LCL) funds. When coins are locked in LCL funds,\n"
+"                    both issuer and holder(s) of credit have the chance for "
+"3x staking. The system has a unique solution\n"
+"                    for coins locked in credit loops unlike other staking "
+"systems. Locking coins into credit loops for\n"
+"                    staking does not make them static. Instead, they can be "
+"circulated while they are locked and doing\n"
+"                    3x staking. The process of credit endorsement is "
+"designed to assure that it is only worth when\n"
+"                    shopping."
+
+#: public/views/stats.html:5
+msgid ""
+"Marmara Stats\n"
+"        <span class=\"t marmara-stats-sync\" tooltip=\"{{sync."
+"lastBlockChecked}} / {{sync.chainTip}} synced.\" tooltip-placement=\"bottom"
+"\" data-ng-show=\"sync.status==='syncing'\">\n"
+"          <span class=\"glyphicon glyphicon-refresh icon-rotate\"></span>\n"
+"          {{sync.progress}}%\n"
+"        </span>"
+msgstr ""
+"Estadísticas de Marmara\n"
+"        <span class=\"t marmara-stats-sync\" tooltip=\"{{sync."
+"lastBlockChecked}} / {{sync.chainTip}} synced.\" tooltip-placement=\"bottom"
+"\" data-ng-show=\"sync.status==='syncing'\">\n"
+"          <span class=\"glyphicon glyphicon-refresh icon-rotate\"></span>\n"
+"          {{sync.progress}}%\n"
+"        </span>"
+
+#: public/views/messages_verify.html:72
+msgid "Marmara comes with a way of signing arbitrary messages."
+msgstr "Marmara comes with a way of signing arbitrary messages."
+
+#: public/views/status.html:79
+msgid "Marmara node information"
+msgstr "Información del nodo Marmara"
+
+#: public/views/messages_verify.html:29
+msgid "Message"
+msgstr "Mensaje"
+
+#: public/views/transaction.html:65
 msgid "Mined Time"
 msgstr "Hora de Minado"
 
-#: public/views/block.html public/views/block_list.html
-#: public/views/index.html
+#: public/views/block.html:69 public/views/block_list.html:43
+#: public/views/index.html:29
 msgid "Mined by"
 msgstr "Minado por"
 
-#: public/views/status.html
+#: public/views/status.html:104
 msgid "Mining Difficulty"
 msgstr "Dificultad de Minado"
 
-#: public/views/block.html
+#: public/views/status.html:108
+msgid "Network"
+msgstr "Red"
+
+#: public/views/block.html:128
 msgid "Next Block"
 msgstr "Próximo Bloque"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:216
+msgid "No Inputs"
+msgstr "Sin Entradas"
+
+#: public/views/transaction/tx.html:223
 msgid "No Inputs (Newly Generated Coins)"
 msgstr "Sin Entradas (Monedas Recién Generadas)"
 
-#: public/views/block_list.html
+#: public/views/transaction/tx.html:81
+msgid "No JoinSplits"
+msgstr "No JoinSplits"
+
+#: public/views/transaction/tx.html:325
+msgid "No Outputs"
+msgstr "Sin Salidas"
+
+#: public/views/transaction/tx.html:27
+msgid "No Shielded Spends and Outputs"
+msgstr "No Shielded Spends and Outputs"
+
+#: public/views/block_list.html:66
 msgid "No blocks yet."
 msgstr "No hay bloques aún."
 
-#: public/views/includes/header.html public/views/includes/search.html
+#: public/views/includes/search.html:5
 msgid "No matching records found!"
 msgstr "¡No se encontraron registros coincidentes!"
 
-#: public/views/address.html
+#: public/views/address.html:48 public/views/address.html:67
 msgid "No. Transactions"
 msgstr "Nro. de Transacciones"
 
-#: public/views/block.html
+#: public/views/block.html:50
 msgid "Number Of Transactions"
 msgstr "Número de Transacciones"
 
-#: public/views/transaction.html
+#: public/views/transaction.html:33
 msgid "Output"
 msgstr "Salida"
 
-#: public/views/index.html
+#: public/views/index.html:135
 msgid "Powered by"
 msgstr "Funciona con"
 
-#: public/views/block.html
+#: public/views/block.html:84
 msgid "Previous Block"
 msgstr "Bloque Anterior"
 
-#: public/views/status.html
+#: public/views/status.html:88
 msgid "Protocol version"
 msgstr "Versión del protocolo"
 
-#: public/views/status.html
+#: public/views/status.html:112
 msgid "Proxy setting"
 msgstr "Opción de proxy"
 
-#: public/views/transaction.html
+#: public/views/transaction/tx.html:148
+msgid "Public input"
+msgstr "Public input"
+
+#: public/views/transaction/tx.html:177
+msgid "Public output"
+msgstr "Public output"
+
+#: public/views/transaction_sendraw.html:12
+msgid "Raw transaction data"
+msgstr "Raw transaction data"
+
+#: public/views/transaction_sendraw.html:19
+msgid "Raw transaction data must be a valid hexadecimal string."
+msgstr "Raw transaction data must be a valid hexadecimal string."
+
+#: public/views/transaction.html:60
 msgid "Received Time"
 msgstr "Hora de Recibido"
 
-#: public/views/redirect.html
+#: public/views/redirect.html:1
 msgid "Redirecting..."
 msgstr "Redireccionando..."
 
-#: public/views/includes/header.html
+#: public/views/includes/search.html:3
 msgid "Search for block, transaction or address"
 msgstr "Buscar bloques, transacciones o direcciones"
 
-#: public/views/index.html
+#: public/views/index.html:51
 msgid "See all blocks"
 msgstr "Ver todos los bloques"
 
-#: public/views/status.html
-msgid "Show Transaction Output data"
-msgstr "Mostrar dato de Salida de la Transacción"
+#: public/views/transaction_sendraw.html:26
+msgid "Send transaction"
+msgstr "Enviar transacción"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:187 public/views/transaction/tx.html:302
 msgid "Show all"
 msgstr "Mostrar todos"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:185 public/views/transaction/tx.html:300
 msgid "Show input"
 msgstr "Mostrar entrada"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:132 public/views/transaction/tx.html:191
+#: public/views/transaction/tx.html:255 public/views/transaction/tx.html:306
+#: public/views/transaction/tx.html:351
 msgid "Show less"
 msgstr "Ver menos"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:134 public/views/transaction/tx.html:193
+#: public/views/transaction/tx.html:257 public/views/transaction/tx.html:308
+#: public/views/transaction/tx.html:353
 msgid "Show more"
 msgstr "Ver más"
 
-#: public/views/block_list.html public/views/index.html
-#: public/views/transaction.html
+#: public/views/messages_verify.html:20
+msgid "Signature"
+msgstr "Firma"
+
+#: public/views/block_list.html:44 public/views/index.html:30
+#: public/views/transaction.html:52
 msgid "Size"
 msgstr "Tamaño"
 
-#: public/views/block.html
+#: public/views/block.html:102
 msgid "Size (bytes)"
 msgstr "Tamaño (bytes)"
 
-#: public/views/status.html
+#: public/views/status.html:51
 msgid "Skipped Blocks (previously synced)"
 msgstr "Bloques Saltados (previamente sincronizado)"
 
-#: public/views/status.html
+#: public/views/status.html:35
 msgid "Start Date"
 msgstr "Fecha de Inicio"
 
-#: public/views/dummy-translations.html
+#: public/views/dummy-translations.html:2
 msgid "Status"
 msgstr "Estado"
 
-#: public/views/block.html public/views/transaction.html
+#: public/views/block.html:44 public/views/transaction.html:48
 msgid "Summary"
 msgstr "Resumen"
 
-#: public/views/address.html
+#: public/views/address.html:30
 msgid "Summary <small>confirmed</small>"
 msgstr "Resumen <small>confirmados</small>"
 
-#: public/views/status.html
+#: public/views/status.html:13
 msgid "Sync Progress"
 msgstr "Proceso de Sincronización"
 
-#: public/views/status.html
+#: public/views/status.html:9
 msgid "Sync Status"
 msgstr "Estado de Sincronización"
 
-#: public/views/status.html
+#: public/views/status.html:55
 msgid "Sync Type"
 msgstr "Tipo de Sincronización"
 
-#: public/views/status.html
+#: public/views/status.html:47
 msgid "Synced Blocks"
 msgstr "Bloques Sincornizados"
 
-#: public/views/status.html
-msgid "Testnet"
-msgstr "Red de prueba"
+#: public/views/stats.html:51
+msgid "Synchronizing data..."
+msgstr "Sincronizando datos..."
 
-#: public/views/transaction/list.html
+#: public/views/messages_verify.html:56
+msgid "The message failed to verify."
+msgstr "El mensaje no se pudo verificar."
+
+#: public/views/messages_verify.html:52
+msgid "The message is verifiably from {{verification.address}}."
+msgstr "El mensaje es verificable de {{verification.address}}."
+
+#: public/views/index.html:89
+msgid ""
+"The system rewards buyers and sellers when shopping with credit loops\n"
+"                    instead of cash. It works as an independent smart chain "
+"with a 25% mineable and 75% stakeable coin\n"
+"                    integrated with two DeFi protocols. The system uses UTXO "
+"based Turing Complete Smart Contracting\n"
+"                    system powered by Komodo Platform."
+msgstr ""
+"The system rewards buyers and sellers when shopping with credit loops\n"
+"                    instead of cash. It works as an independent smart chain "
+"with a 25% mineable and 75% stakeable coin\n"
+"                    integrated with two DeFi protocols. The system uses UTXO "
+"based Turing Complete Smart Contracting\n"
+"                    system powered by Komodo Platform."
+
+#: public/views/transaction/list.html:1
 msgid "There are no transactions involving this address."
-msgstr "No hay transacciones para esta dirección"
+msgstr "No hay transacciones para esta dirección."
 
-#: public/views/status.html
+#: public/views/transaction_sendraw.html:49
+msgid ""
+"This form can be used to broadcast a raw transaction in hex format over\n"
+"        the Marmara network."
+msgstr ""
+"Este formulario se puede utilizar para difundir una transacción sin\n"
+"         procesar en formato hexadecimal a través de la red Marmara."
+
+#: public/views/messages_verify.html:75
+msgid ""
+"This form can be used to verify that a message comes from\n"
+"        a specific Marmara address."
+msgstr ""
+"Este formulario se puede utilizar para verificar que un mensaje\n"
+"        proviene de una dirección específica de Marmara."
+
+#: public/views/status.html:96
 msgid "Time Offset"
 msgstr "Desplazamiento de hora"
 
-#: public/views/block.html
+#: public/views/block.html:65 public/views/block_list.html:41
 msgid "Timestamp"
 msgstr "Fecha y hora"
 
-#: public/views/block_list.html
+#: public/views/block_list.html:21
 msgid "Today"
 msgstr "Hoy"
 
-#: public/views/status.html
-msgid "Total Amount"
-msgstr "Cantidad Total"
-
-#: public/views/address.html
+#: public/views/address.html:36
 msgid "Total Received"
 msgstr "Total Recibido"
 
-#: public/views/address.html
+#: public/views/address.html:40
 msgid "Total Sent"
 msgstr "Total Enviado"
 
-#: public/views/transaction.html
+#: public/views/transaction.html:30 public/views/transaction.html:44
+#: public/views/transaction.html:6
 msgid "Transaction"
 msgstr "Transacción"
 
-#: public/views/status.html
-msgid "Transaction Output Set Information"
-msgstr "Información del Conjunto de Salida de la Transacción"
+#: public/views/transaction_sendraw.html:39
+msgid "Transaction succesfully broadcast.<br>Transaction id: {{txid}}"
+msgstr "Transacción transmitida con éxito.<br>Transacción id: {{txid}}"
 
-#: public/views/status.html
-msgid "Transaction Outputs"
-msgstr "Salidas de la Transacción"
-
-#: public/views/address.html public/views/block.html
-#: public/views/block_list.html public/views/index.html
-#: public/views/status.html
+#: public/views/address.html:76 public/views/block.html:137
+#: public/views/block_list.html:42 public/views/index.html:28
 msgid "Transactions"
 msgstr "Transacciones"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:375
 msgid "Type"
 msgstr "Tipo"
 
-#: public/views/address.html
+#: public/views/address.html:59
 msgid "Unconfirmed"
 msgstr "Sin confirmar"
 
-#: public/views/transaction.html public/views/transaction/tx.html
+#: public/views/transaction.html:17 public/views/transaction/tx.html:411
 msgid "Unconfirmed Transaction!"
 msgstr "¡Transacción sin confirmar!"
 
-#: public/views/address.html
+#: public/views/address.html:63
 msgid "Unconfirmed Txs Balance"
 msgstr "Balance sin confirmar"
 
-#: public/views/index.html
+#: public/views/index.html:60
 msgid "Value Out"
 msgstr "Valor de Salida"
 
-#: public/views/block.html public/views/status.html
+#: public/views/messages_verify.html:39
+msgid "Verify"
+msgstr "Verificar"
+
+#: public/views/messages_verify.html:4
+msgid "Verify signed message"
+msgstr "Verificar mensaje firmado"
+
+#: public/views/block.html:106 public/views/status.html:84
 msgid "Version"
 msgstr "Versión"
 
-#: public/views/block_list.html public/views/index.html
+#: public/views/block_list.html:49 public/views/index.html:35
 msgid "Waiting for blocks..."
 msgstr "Esperando bloques..."
 
-#: public/views/index.html
+#: public/views/index.html:65
 msgid "Waiting for transactions..."
 msgstr "Esperando transacciones..."
 
-#: public/views/block_list.html
+#: public/views/index.html:80
+msgid "What is Marmara Credit Loops?"
+msgstr "Qué es Marmara Credit Loops?"
+
+#: public/views/block_list.html:34
 msgid "by date."
 msgstr "por fecha."
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:13
 msgid "first seen at"
 msgstr "Visto a"
 
-#: public/views/transaction/tx.html
+#: public/views/transaction/tx.html:17
 msgid "mined"
 msgstr "minado"
 
-#: public/views/block_list.html
+#: public/views/block_list.html:9
 msgid "mined on:"
 msgstr "minado el:"
-
-#~ msgid "Waiting for blocks"
-#~ msgstr "Esperando bloques"

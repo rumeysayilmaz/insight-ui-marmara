@@ -1,25 +1,24 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Language-Team: \n"
-"MIME-Version: 1.0\n"
-"X-Generator: Poedit 2.0.6\n"
 "Last-Translator: \n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"Language: ru\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: public/views/transaction/tx.html:276
 msgid "(Input unconfirmed)"
-msgstr "(неподтвержденный вход)"
+msgstr "(Eingabe unbestätigt)"
 
 #: public/views/404.html:4
 msgid "404 Page not found :("
-msgstr "404 Страница не найдена :("
+msgstr "404 Seite nicht gefunden :("
 
 #: public/views/index.html:86
 msgid ""
@@ -31,201 +30,209 @@ msgid ""
 msgstr ""
 "<a href=\"http://marmara.io\" target=\"_blank\" title=\"Marmara Credit Loops"
 "\">Marmara\n"
-"                    Credit Loops (MCL)</a> is the first and the only "
-"Decentralized Finance (DeFi) system in the World\n"
-"                    designed to run in real economy."
+"                    Credit Loops (MCL)</a> ist das erste und einzige DeFi-"
+"System (Decentralized Finance)\n"
+"                    der Welt, das für den Betrieb in der Realwirtschaft "
+"konzipiert wurde."
+
+#: public/views/stats.html:42
+msgid "<span>Historical stats</span>"
+msgstr "<span>Historische Statistiken</span>"
 
 #: public/views/address.html:20 public/views/address.html:26
 #: public/views/address.html:6 public/views/messages_verify.html:11
 msgid "Address"
-msgstr "Адрес"
+msgstr "Adresse"
 
 #: public/views/index.html:27
 msgid "Age"
-msgstr "Время"
+msgstr "Alter"
 
 #: public/views/messages_verify.html:62
 msgid "An error occured in the verification process."
-msgstr "Произошла ошибка в процессе проверки."
+msgstr "Bei der Überprüfung ist ein Fehler aufgetreten."
 
 #: public/views/transaction_sendraw.html:42
 msgid "An error occured:<br>{{error}}"
-msgstr "Произошла ошибка:<br>{{error}}"
+msgstr "Es ist ein Fehler aufgetreten:<br>{{error}}"
 
 #: public/views/status.html:4
 msgid "Application Status"
-msgstr "Статус приложения"
+msgstr "Programmstatus"
 
 #: public/views/block.html:12
 msgid "Block"
-msgstr "Блок"
+msgstr "Block"
 
 #: public/views/block.html:61
 msgid "Block Reward"
-msgstr "Награда за блок"
+msgstr "Belohnung"
 
 #: public/views/block_list.html:33 public/views/block_list.html:8
 #: public/views/dummy-translations.html:1 public/views/status.html:92
 msgid "Blocks"
-msgstr "Блоки"
+msgstr "Blöcke"
 
 #: public/views/transaction_sendraw.html:4
 msgid "Broadcast Raw Transaction"
-msgstr "Отправить raw-транзакцию в сеть"
+msgstr "Broadcast Raw-Transaktion"
 
 #: public/views/includes/connection.html:9
 msgid ""
 "Can't connect to Marmara to get live updates from the p2p network. (Tried "
 "connecting to komodod at {{host}}:{{port}} and failed.)"
 msgstr ""
-"Can't connect to Marmara to get live updates from the p2p network. (Tried "
-"connecting to komodod at {{host}}:{{port}} and failed.)"
+"Es ist nicht möglich mit Marmara zu verbinden um live Aktualisierungen vom "
+"P2P Netzwerk zu erhalten. (Verbindungsversuch zu komodod an {{host}}:"
+"{{port}} ist fehlgeschlagen.)"
 
 #: public/views/includes/connection.html:13
 msgid "Can't connect to insight server. Attempting to reconnect..."
-msgstr "Ошибка подклоючения к серверу insight. Повторная попытка..."
+msgstr ""
+"Keine Verbindung zum Insight-Server möglich. Es wird versucht die Verbindung "
+"neu aufzubauen..."
 
 #: public/views/includes/connection.html:17
 msgid "Can't connect to internet. Please, check your connection."
-msgstr "Ошибка подключения к интернет. Пожалуйста, проверьте соединение."
+msgstr "Keine Verbindung zum Internet möglich, bitte Zugangsdaten prüfen."
 
 #: public/views/charts.html:8
 msgid "Charts"
-msgstr "Графики"
+msgstr "Diagramme"
 
 #: public/views/status.html:18
 msgid "Complete"
-msgstr "Завершено"
+msgstr "Vollständig"
 
 #: public/views/transaction.html:15 public/views/transaction/tx.html:410
 msgid "Confirmations"
-msgstr "Подтверждений"
+msgstr "Bestätigungen"
 
 #: public/views/includes/header.html:35
 msgid "Conn"
-msgstr "Узлы"
+msgstr "Verbindungen"
 
 #: public/views/status.html:100
 msgid "Connections to other nodes"
-msgstr "Соединений с другими узлами"
+msgstr "Verbindungen zu Nodes"
 
 #: public/views/status.html:70
 msgid "Current Blockchain Tip (insight)"
-msgstr "Текущая вершина блокчейна (insight)"
+msgstr "Aktueller Blockchain Tip (insight)"
 
 #: public/views/status.html:25
 msgid "Current Sync Status"
-msgstr "Текущий статус синхронизации"
+msgstr "Aktueller Status"
 
 #: public/views/transaction.html:93
 msgid "Details"
-msgstr "Подробная информация"
+msgstr "Details"
 
 #: public/views/block.html:94
 msgid "Difficulty"
-msgstr "Сложность"
+msgstr "Schwierigkeit"
 
 #: public/views/transaction/tx.html:248 public/views/transaction/tx.html:284
 msgid "Double spent attempt detected. From tx:"
-msgstr "Попытка двойной траты. Транзакция:"
+msgstr "Es wurde ein double Spend Versuch erkannt.Von tx:"
 
 #: public/views/messages_verify.html:64
 msgid "Error message:"
-msgstr "Описание ошибки:"
+msgstr "Fehlermeldung:"
 
 #: public/views/includes/connection.html:7
 msgid "Error!"
-msgstr "Ошибка!"
+msgstr "Fehler!"
 
 #: public/views/transaction/tx.html:406
 msgid "Fee"
-msgstr "Комиссия"
+msgstr "Gebühr"
 
 #: public/views/transaction.html:56
 msgid "Fee Rate"
-msgstr "Размер комисии"
+msgstr "Gebührensatz"
 
 #: public/views/address.html:10 public/views/address.html:44
 msgid "Final Balance"
-msgstr "Итоговый баланс"
+msgstr "Schlussbilanz"
 
 #: public/views/status.html:39
 msgid "Finish Date"
-msgstr "Время завершения"
+msgstr "Fertigstellung"
 
 #: public/views/404.html:5
 msgid "Go to home"
-msgstr "Домой"
+msgstr "Zur Startseite"
 
 #: public/views/block.html:54 public/views/block_list.html:40
 #: public/views/includes/header.html:36 public/views/index.html:26
 msgid "Height"
-msgstr "Высота"
+msgstr "Höhe"
 
 #: public/views/transaction.html:70 public/views/transaction/tx.html:399
 msgid "Included in Block"
-msgstr "Входит в блок"
+msgstr "Eingefügt in Block"
 
 #: public/views/transaction/tx.html:244 public/views/transaction/tx.html:280
 msgid "Incoherence in levelDB detected:"
-msgstr "Нарушение связности в LevelDB:"
+msgstr "Es wurde eine Zusammenhangslosigkeit in der LevelDB festgestellt:"
 
 #: public/views/status.html:116
 msgid "Info Errors"
-msgstr "Информация об ошибках"
+msgstr "Fehlerbeschreibung"
 
 #: public/views/status.html:43
 msgid "Initial Block Chain Height"
-msgstr "Начальная высота блокчейна"
+msgstr "Ursprüngliche Blockchain Höhe"
 
 #: public/views/transaction.html:32
 msgid "Input"
-msgstr "Вход"
+msgstr "Eingänge"
 
 #: public/views/status.html:61
 msgid "Last Block"
-msgstr "Последний блок"
+msgstr "Letzter Block"
 
 #: public/views/status.html:66
 msgid "Last Block Hash (Komodod)"
-msgstr "Хеш последнего блока (komodod)"
+msgstr "Letzter Hash (Komodod)"
 
 #: public/views/index.html:22
 msgid "Latest Blocks"
-msgstr "Последние блоки"
+msgstr "Letzte Blöcke"
 
 #: public/views/index.html:54
 msgid "Latest Transactions"
-msgstr "Последние транзакции"
+msgstr "Letzte Transaktionen"
 
 #: public/views/address.html:22
 msgid "Loading Address Information"
-msgstr "Загрузка информации об адресе"
+msgstr "Lade Adressinformationen"
 
 #: public/views/block.html:36
 msgid "Loading Block Information"
-msgstr "Загрузка информации о блоке"
+msgstr "Lade Blockinformation"
 
 #: public/views/block_list.html:17
 msgid "Loading Selected Date..."
-msgstr "Загрузка выбранной даты..."
+msgstr "Lade gewähltes Datum..."
 
 #: public/views/transaction.html:39
 msgid "Loading Transaction Details"
-msgstr "Загрузка деталей транзакции"
+msgstr "Lade Transaktionsdetails"
 
 #: public/views/transaction/list.html:9
 msgid "Loading Transactions..."
-msgstr "Загрузка транзакций..."
+msgstr "Lade Transaktionen..."
 
 #: public/views/charts.html:24 public/views/stats.html:48
 msgid "Loading chart..."
-msgstr "Загрузка графиков..."
+msgstr "Lade Diagramm..."
 
 #: public/views/includes/infoStatus.html:1 public/views/messages_verify.html:49
 #: public/views/transaction_sendraw.html:36
 msgid "Loading..."
-msgstr "Загрузка..."
+msgstr "Lade..."
 
 #: public/views/index.html:93
 msgid ""
@@ -273,7 +280,7 @@ msgid ""
 "          {{sync.progress}}%\n"
 "        </span>"
 msgstr ""
-"статистика Marmara\n"
+"Marmara-Statistiken\n"
 "        <span class=\"t marmara-stats-sync\" tooltip=\"{{sync."
 "lastBlockChecked}} / {{sync.chainTip}} synced.\" tooltip-placement=\"bottom"
 "\" data-ng-show=\"sync.status==='syncing'\">\n"
@@ -287,205 +294,206 @@ msgstr "Marmara comes with a way of signing arbitrary messages."
 
 #: public/views/status.html:79
 msgid "Marmara node information"
-msgstr "Информация об узле Marmara"
+msgstr "Marmara-Knoteninformationen"
 
 #: public/views/messages_verify.html:29
 msgid "Message"
-msgstr "Сообщение"
+msgstr "Botschaft"
 
 #: public/views/transaction.html:65
 msgid "Mined Time"
-msgstr "Время получения"
+msgstr "Block gefunden (Mining)"
 
 #: public/views/block.html:69 public/views/block_list.html:43
 #: public/views/index.html:29
 msgid "Mined by"
-msgstr "Майнер"
+msgstr "Gefunden von"
 
 #: public/views/status.html:104
 msgid "Mining Difficulty"
-msgstr "Сложность майнинга"
+msgstr "Schwierigkeitgrad"
 
 #: public/views/status.html:108
 msgid "Network"
-msgstr "Сеть"
+msgstr "Netzwerk"
 
 #: public/views/block.html:128
 msgid "Next Block"
-msgstr "Следующий блок"
+msgstr "Nächster Block"
 
 #: public/views/transaction/tx.html:216
 msgid "No Inputs"
-msgstr "Нет входов"
+msgstr "Keine Eingänge"
 
 #: public/views/transaction/tx.html:223
 msgid "No Inputs (Newly Generated Coins)"
-msgstr "Нет входов (coinbase транзакция)"
+msgstr "Keine Eingänge (Neu generierte Coins)"
 
 #: public/views/transaction/tx.html:81
 msgid "No JoinSplits"
-msgstr "Нет операций (sprout)"
+msgstr "No JoinSplits"
 
 #: public/views/transaction/tx.html:325
 msgid "No Outputs"
-msgstr "Нет выходов"
+msgstr "Keine Ausgänge"
 
 #: public/views/transaction/tx.html:27
 msgid "No Shielded Spends and Outputs"
-msgstr "Нет операций (sapling)"
+msgstr "No Shielded Spends and Outputs"
 
 #: public/views/block_list.html:66
 msgid "No blocks yet."
-msgstr "Пока нет блоков."
+msgstr "Keine Blöcke bisher."
 
 #: public/views/includes/search.html:5
 msgid "No matching records found!"
-msgstr "Не найдено записей!"
+msgstr "Keine passenden Einträge gefunden!"
 
 #: public/views/address.html:48 public/views/address.html:67
 msgid "No. Transactions"
-msgstr "Всего транзакций"
+msgstr "Anzahl Transaktionen"
 
 #: public/views/block.html:50
 msgid "Number Of Transactions"
-msgstr "Количество транзакций"
+msgstr "Anzahl der Transaktionen"
 
 #: public/views/transaction.html:33
 msgid "Output"
-msgstr "Выход"
+msgstr "Ausgänge"
 
 #: public/views/index.html:135
 msgid "Powered by"
-msgstr "Powered by"
+msgstr "Unterstützt durch"
 
 #: public/views/block.html:84
 msgid "Previous Block"
-msgstr "Предыдущий блок"
+msgstr "Letzter Block"
 
 #: public/views/status.html:88
 msgid "Protocol version"
-msgstr "Версия протокола"
+msgstr "Protokollversion"
 
 #: public/views/status.html:112
 msgid "Proxy setting"
-msgstr "Настройки proxy"
+msgstr "Proxyeinstellung"
 
 #: public/views/transaction/tx.html:148
 msgid "Public input"
-msgstr "Публичный вход"
+msgstr "Public Eingabe"
 
 #: public/views/transaction/tx.html:177
 msgid "Public output"
-msgstr "Публичный выход"
+msgstr "Public ausgabe"
 
 #: public/views/transaction_sendraw.html:12
 msgid "Raw transaction data"
-msgstr "Raw данные транзакции"
+msgstr "Rohe Transaktionsdaten"
 
 #: public/views/transaction_sendraw.html:19
 msgid "Raw transaction data must be a valid hexadecimal string."
-msgstr "Raw данные транзакции должны быть правильной hex строкой."
+msgstr ""
+"Rohe Transaktionsdaten müssen eine gültige hexadezimale Zeichenfolge sein."
 
 #: public/views/transaction.html:60
 msgid "Received Time"
-msgstr "Время получения"
+msgstr "Empfangene Zeit"
 
 #: public/views/redirect.html:1
 msgid "Redirecting..."
-msgstr "Перенаправление..."
+msgstr "Umleiten..."
 
 #: public/views/includes/search.html:3
 msgid "Search for block, transaction or address"
-msgstr "Поиск блока, транзакции или адреса"
+msgstr "Suchen Sie nach Block, Transaktion oder Adresse"
 
 #: public/views/index.html:51
 msgid "See all blocks"
-msgstr "Просмотр всех блоков"
+msgstr "Alle Blöcke anzeigen"
 
 #: public/views/transaction_sendraw.html:26
 msgid "Send transaction"
-msgstr "Отправить транзакцию"
+msgstr "Transaktion senden"
 
 #: public/views/transaction/tx.html:187 public/views/transaction/tx.html:302
 msgid "Show all"
-msgstr "Показать все"
+msgstr "Zeige alles"
 
 #: public/views/transaction/tx.html:185 public/views/transaction/tx.html:300
 msgid "Show input"
-msgstr "Показать вход"
+msgstr "Eingabe anzeigen"
 
 #: public/views/transaction/tx.html:132 public/views/transaction/tx.html:191
 #: public/views/transaction/tx.html:255 public/views/transaction/tx.html:306
 #: public/views/transaction/tx.html:351
 msgid "Show less"
-msgstr "Скрыть"
+msgstr "Zeige weniger"
 
 #: public/views/transaction/tx.html:134 public/views/transaction/tx.html:193
 #: public/views/transaction/tx.html:257 public/views/transaction/tx.html:308
 #: public/views/transaction/tx.html:353
 msgid "Show more"
-msgstr "Показать"
+msgstr "Zeig mehr"
 
 #: public/views/messages_verify.html:20
 msgid "Signature"
-msgstr "Подпись"
+msgstr "Unterschrift"
 
 #: public/views/block_list.html:44 public/views/index.html:30
 #: public/views/transaction.html:52
 msgid "Size"
-msgstr "Размер"
+msgstr "Größe"
 
 #: public/views/block.html:102
 msgid "Size (bytes)"
-msgstr "Размер (байт)"
+msgstr "Größe (bytes)"
 
 #: public/views/status.html:51
 msgid "Skipped Blocks (previously synced)"
-msgstr "Пропущенные блоки (ранее синхронизированные)"
+msgstr "Verworfene Blöcke (bereits syncronisiert)"
 
 #: public/views/status.html:35
 msgid "Start Date"
-msgstr "Время начала"
+msgstr "Startdatum"
 
 #: public/views/dummy-translations.html:2
 msgid "Status"
-msgstr "Статус"
+msgstr "Status"
 
 #: public/views/block.html:44 public/views/transaction.html:48
 msgid "Summary"
-msgstr "Итог"
+msgstr "Zusammenfassung"
 
 #: public/views/address.html:30
 msgid "Summary <small>confirmed</small>"
-msgstr "Итог <small>подтвержденный</small>"
+msgstr "Zusammenfassung <small>bestätigt</small>"
 
 #: public/views/status.html:13
 msgid "Sync Progress"
-msgstr "Синхронизация"
+msgstr "Fortschritt"
 
 #: public/views/status.html:9
 msgid "Sync Status"
-msgstr "Статус синхронизации"
+msgstr "Syncronisation"
 
 #: public/views/status.html:55
 msgid "Sync Type"
-msgstr "Тип синхронизации"
+msgstr "Art der Syncronisation"
 
 #: public/views/status.html:47
 msgid "Synced Blocks"
-msgstr "Синхронизировано блоков"
+msgstr "Syncronisierte Blöcke"
 
 #: public/views/stats.html:51
 msgid "Synchronizing data..."
-msgstr "Синхронизация данных..."
+msgstr "Daten synchronisieren..."
 
 #: public/views/messages_verify.html:56
 msgid "The message failed to verify."
-msgstr "Проверка подписи сообщения не пройдена."
+msgstr "Die Nachricht konnte nicht überprüft werden."
 
 #: public/views/messages_verify.html:52
 msgid "The message is verifiably from {{verification.address}}."
-msgstr "Сообщение подписано отправителем {{verification.address}}."
+msgstr "Die Nachricht stammt nachweislich von  {{verification.address}}."
 
 #: public/views/index.html:89
 msgid ""
@@ -505,114 +513,114 @@ msgstr ""
 
 #: public/views/transaction/list.html:1
 msgid "There are no transactions involving this address."
-msgstr "Для этого адреса нет транзакций."
+msgstr "Es gibt keine Transaktionen zu dieser Adresse."
 
 #: public/views/transaction_sendraw.html:49
 msgid ""
 "This form can be used to broadcast a raw transaction in hex format over\n"
 "        the Marmara network."
 msgstr ""
-"Эта форма может быть использована для отправки raw транзакции в hex\n"
-"        формате через сеть."
+"Dieses Formular kann verwendet werden, um eine Rohtransaktion\n"
+"        im Hex-Format über das Marmara-Netzwerk zu senden."
 
 #: public/views/messages_verify.html:75
 msgid ""
 "This form can be used to verify that a message comes from\n"
 "        a specific Marmara address."
 msgstr ""
-"Эта форма может быть использована для проверки\n"
-"        отправителя (адреса) сообщения."
+"Mit diesem Formular können Sie überprüfen,\n"
+"        ob eine Nachricht von einer bestimmten Marmara-Adresse stammt."
 
 #: public/views/status.html:96
 msgid "Time Offset"
-msgstr "Смещение времени"
+msgstr "Zeitoffset zu UTC"
 
 #: public/views/block.html:65 public/views/block_list.html:41
 msgid "Timestamp"
-msgstr "Дата / время"
+msgstr "Zeitstempel"
 
 #: public/views/block_list.html:21
 msgid "Today"
-msgstr "Сегодня"
+msgstr "Heute"
 
 #: public/views/address.html:36
 msgid "Total Received"
-msgstr "Всего получено"
+msgstr "Insgesamt empfangen"
 
 #: public/views/address.html:40
 msgid "Total Sent"
-msgstr "Всего отправлено"
+msgstr "Insgesamt gesendet"
 
 #: public/views/transaction.html:30 public/views/transaction.html:44
 #: public/views/transaction.html:6
 msgid "Transaction"
-msgstr "Транзакция"
+msgstr "Transaktion"
 
 #: public/views/transaction_sendraw.html:39
 msgid "Transaction succesfully broadcast.<br>Transaction id: {{txid}}"
-msgstr "Транзакция успешно отправлена.<br>TXID: {{txid}}"
+msgstr "Transaktion erfolgreich gesendet.<br>Transaktion id: {{txid}}"
 
 #: public/views/address.html:76 public/views/block.html:137
 #: public/views/block_list.html:42 public/views/index.html:28
 msgid "Transactions"
-msgstr "Транзакции"
+msgstr "Transaktionen"
 
 #: public/views/transaction/tx.html:375
 msgid "Type"
-msgstr "Тип"
+msgstr "Typ"
 
 #: public/views/address.html:59
 msgid "Unconfirmed"
-msgstr "Нет подтверждений"
+msgstr "Unbestätigt"
 
 #: public/views/transaction.html:17 public/views/transaction/tx.html:411
 msgid "Unconfirmed Transaction!"
-msgstr "Неподтвержденная транзакция!"
+msgstr "Unbestätigte Transaktion!"
 
 #: public/views/address.html:63
 msgid "Unconfirmed Txs Balance"
-msgstr "Баланс неподтвержденных транзакций"
+msgstr "Unbestätigtes Guthaben"
 
 #: public/views/index.html:60
 msgid "Value Out"
-msgstr "Сумма"
+msgstr "Wert"
 
 #: public/views/messages_verify.html:39
 msgid "Verify"
-msgstr "Проверить"
+msgstr "Überprüfen"
 
 #: public/views/messages_verify.html:4
 msgid "Verify signed message"
-msgstr "Проверить подпись сообщения"
+msgstr "Überprüfen Sie die signierte Nachricht"
 
 #: public/views/block.html:106 public/views/status.html:84
 msgid "Version"
-msgstr "Версия"
+msgstr "Version"
 
 #: public/views/block_list.html:49 public/views/index.html:35
 msgid "Waiting for blocks..."
-msgstr "Ожидание блоков..."
+msgstr "Warte auf Blöcke..."
 
 #: public/views/index.html:65
 msgid "Waiting for transactions..."
-msgstr "Ожидание транзакций..."
+msgstr "Warte auf Transaktionen..."
 
 #: public/views/index.html:80
 msgid "What is Marmara Credit Loops?"
-msgstr "What is Marmara Credit Loops?"
+msgstr "Was ist Marmara Credit Loops?"
 
 #: public/views/block_list.html:34
 msgid "by date."
-msgstr "по дате."
+msgstr "Nach Datum."
 
 #: public/views/transaction/tx.html:13
 msgid "first seen at"
-msgstr "первое появление"
+msgstr "zuerst gesehen am"
 
 #: public/views/transaction/tx.html:17
 msgid "mined"
-msgstr "дата"
+msgstr "gefunden"
 
 #: public/views/block_list.html:9
 msgid "mined on:"
-msgstr "дата:"
+msgstr "vom:"
