@@ -5,7 +5,7 @@ angular.module('insight.stats')
     function($resource) {
       return $resource(window.apiPrefix + '/stats');
     })
-.factory('StatsSync',
+  .factory('StatsSync',
     function($resource) {
       return $resource(window.apiPrefix + '/stats/sync');
     })
