@@ -18,7 +18,7 @@ angular.module('insight.system').controller('IndexController',
 
     var socket = getSocket($scope);
 
-    var _startSocket = function() { 
+    var _startSocket = function() {
       socket.emit('subscribe', 'inv');
       socket.on('tx', function(tx) {
         $scope.txs.unshift(tx);
