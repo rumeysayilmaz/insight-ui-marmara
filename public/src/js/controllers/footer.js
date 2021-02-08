@@ -18,8 +18,11 @@ angular.module('insight.system').controller('FooterController',
       name: 'English',
       isoCode: 'en',
     }, {
+      name: 'Turkish',
+      isoCode: 'tr_TR',
+    },{
       name: 'Deutsch',
-      isoCode: 'de_DE',
+      isoCode: 'de',
     }, {
       name: 'Русский',
       isoCode: 'ru',

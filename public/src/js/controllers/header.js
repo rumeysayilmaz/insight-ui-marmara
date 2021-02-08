@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('insight.system').controller('HeaderController',
-  function($scope, $rootScope, $modal, getSocket, Global, Block) {
+  function($scope, $rootScope, $modal, getSocket, Global, Block, $location, $route) {
     $scope.global = Global;
 
     $rootScope.currency = {
@@ -21,6 +21,9 @@ angular.module('insight.system').controller('HeaderController',
     }, {
       'title': 'Status',
       'link': 'status'
+    }, {
+      'title': 'Stats',
+      'link': 'stats'
     }];
 
     $scope.openScannerModal = function() {

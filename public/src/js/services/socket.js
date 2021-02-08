@@ -55,7 +55,11 @@ ScopedSocket.prototype.emit = function(event, data, callback) {
 
 angular.module('insight.socket').factory('getSocket',
   function($rootScope) {
-    var socket = io.connect(null, {
+    var socket = io.connect(window.urlPrefix, window.socketPrefix ? {
+      'path': '/' + window.socketPrefix + '/socket.io',
+      'reconnect': true,
+      'reconnection delay': 500,
+    } : {
       'reconnect': true,
       'reconnection delay': 500,
     });

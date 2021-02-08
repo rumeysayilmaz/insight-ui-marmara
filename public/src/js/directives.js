@@ -42,7 +42,7 @@ angular.module('insight')
   })
   .directive('clipCopy', function() {
     ZeroClipboard.config({
-      moviePath: '/lib/zeroclipboard/ZeroClipboard.swf',
+      moviePath: '/public/lib/zeroclipboard/ZeroClipboard.swf',
       trustedDomains: ['*'],
       allowScriptAccess: 'always',
       forceHandCursor: true

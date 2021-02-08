@@ -2,7 +2,10 @@
   "name": "insight-ui-marmara",
   "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the komodo network and build your own services with it.",
   "version": "0.4.0",
-  "repository": "git+https://git@github.com/rumeysayilmaz/insight-ui-marmara.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git@github.com/rumeysayilmaz/insight-ui-marmara.git"
+  },
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -29,6 +32,9 @@
       "email": "jack@z.cash"
     }
   ],
+  "scripts": {
+    "start": "node main.js"
+  },
   "bugs": {
     "url": "https://github.com/supernetorg/insight-ui-komodo/issues"
   },
@@ -43,41 +49,28 @@
     "front-end"
   ],
   "bitcoreNode": "bitcore-node-komodo",
-  "dependencies": {
-  },
+  "dependencies": {},
   "deprecated": false,
   "devDependencies": {
-    "bower": "~1.2.8",
-    "grunt": "~0.4.2",
-    "grunt-cli": "~0.1.11",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.3.2",
+    "bower": "~1.8.8",
+    "grunt": "~1.3.0",
+    "grunt-cli": "~1.3.2",
+    "grunt-contrib-jshint": "~3.0.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-uglify": "~5.0.0",
     "grunt-contrib-watch": "*",
     "grunt-macreload": "*",
     "grunt-css": "~0.5.4",
     "grunt-markdown": "~0.5.0",
-    "grunt-angular-gettext": "^0.2.15",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0"
+    "grunt-angular-gettext": "^2.5.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0"
   },
-  "homepage": "https://github.com/supernetorg/insight-ui-komodo",
-  "keywords": [
-    "insight",
-    "blockchain",
-    "blockexplorer",
-    "komodo",
-    "bitcore",
-    "front-end"
-  ],
-  "license": "MIT",
-  "name": "insight-ui-marmara",
-  "repository": {
-    "type": "git",
-    "url": "git+https://git@github.com/rumeysayilmaz/insight-ui-marmara.git"
-  },
-  "version": "0.4.0"
+  "gitHead": "76aab2de0d9854124b10646dbd40ed3070bb1288",
+  "readme": "# Insight UI\n\nA Bitcoin blockchain explorer web application service for [Bitcore Node](https://github.com/bitpay/bitcore-node) using the [Insight API](https://github.com/supernetorg/insight-api-komodo).\n\n## Quick Start\n\nPlease see the guide at [https://bitcore.io/guides/full-node](https://bitcore.io/guides/full-node) for information about getting a block explorer running. This is only the front-end component of the block explorer, and is packaged together with all of the necessary components in [Bitcore](https://github.com/bitpay/bitcore).\n\n## Getting Started\n\nTo manually install all of the necessary components, you can run these commands:\n\n```bash\nnpm install -g bitcore-node\nbitcore-node create mynode\ncd mynode\nbitcore-node install insight-api\nbitcore-node install insight-ui\nbitcore-node start\n```\n\nOpen a web browser to `http://localhost:3001/insight/`\n\n## Development\n\nTo run Insight UI locally in development mode:\n\nInstall bower dependencies:\n\n```\n$ bower install\n```\n\nTo compile and minify the web application's assets:\n\n```\n$ grunt compile\n```\n\nThere is a convenient Gruntfile.js for automation during editing the code\n\n```\n$ grunt\n```\n\n## Multilanguage support\n\nInsight UI uses [angular-gettext](http://angular-gettext.rocketeer.be) for multilanguage support.\n\nTo enable a text to be translated, add the ***translate*** directive to html tags. See more details [here](http://angular-gettext.rocketeer.be/dev-guide/annotate/). Then, run:\n\n```\ngrunt compile\n```\n\nThis action will create a template.pot file in ***po/*** folder. You can open it with some PO editor ([Poedit](http://poedit.net)). Read this [guide](http://angular-gettext.rocketeer.be/dev-guide/translate/) to learn how to edit/update/import PO files from a generated POT file. PO file will be generated inside po/ folder.\n\nIf you make new changes, simply run **grunt compile** again to generate a new .pot template and the angular javascript ***js/translations.js***. Then (if use Poedit), open .po file and choose ***update from POT File*** from **Catalog** menu.\n\nFinally changes your default language from ***public/src/js/config***\n\n```\ngettextCatalog.currentLanguage = 'es';\n```\n\nThis line will take a look at any *.po files inside ***po/*** folder, e.g.\n**po/es.po**, **po/nl.po**. After any change do not forget to run ***grunt\ncompile***.\n\n\n## Note\n\nFor more details about the [Insight API](https://github.com/supernetorg/insight-api-komodo) configuration and end-points, go to [Insight API GitHub repository](https://github.com/supernetorg/insight-api-komodo).\n\n## Contribute\n\nContributions and suggestions are welcomed at the [Insight UI GitHub repository](https://github.com/supernetorg/insight-ui-komodo).\n\n## Credits\nDeckerSU for suggesting a Marmara stats page mockup\n\n## License\n(The MIT License)\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n'Software'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+  "readmeFilename": "README.md",
+  "_id": "insight-ui-komodo@0.4.0",
+  "_shasum": "faa454cb6493591940507c29664a2d216a3222e6",
+  "_from": "git+https://git@github.com/marmarachain/insight-ui-marmara.git",
+  "_resolved": "git+https://git@github.com/marmarachain/insight-ui-marmara.git#76aab2de0d9854124b10646dbd40ed3070bb1288"
 }
-
-
-

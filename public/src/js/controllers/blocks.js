@@ -44,7 +44,6 @@ angular.module('insight.blocks').controller('BlocksController',
     return moment.min(m).from(b);
   };
 
-
   $scope.list = function() {
     $scope.loading = true;
 
